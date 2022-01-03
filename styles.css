@@ -1,26 +1,51 @@
+
+
 .bgoverlay{
     background-size: cover;
-    width: 4320px;
+    width: 1420px;
+    position: absolute;
+    z-index: -3;
+}
+
+.bg{
+    width: 1420px;
+    height: 957px;
+    background-color: #051946;
+    opacity: 77%;
+    margin-top: -100px;
     position: absolute;
     z-index: -2;
 }
 
-.bg{
-    width: 4320px;
-    height: 2700px;
-    background-color: #102861;
-    opacity: 80%;
-    margin-top: -100px;
-    position: absolute;
-    z-index: -1;
-}
-
 .toplogo{
     position: absolute;
-    width: 350px;
-    margin-left: 180px;
-    margin-top: 30px;
+    width: 125px;
+    margin-left: 26px;
+    margin-top: 11px;
 }
+
+.signupbtn{
+    display: inline;
+    float: right;
+    font-size: 22px;
+    font-family: MADE Tommy Soft;
+    inline-size: 111px;
+    margin-top: 49px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 17px;
+    margin-right: -708px;
+
+}
+
 
 * {
     box-sizing: border-box;
@@ -53,13 +78,13 @@
   }
   
   .nav > .nav-links {
-    display: inline;
-    float: right;
-    word-spacing: 100px;
-    font-size: 60px;
-    font-family: MADE Tommy Soft;
-    inline-size: 2200px;
-    margin-top: 110px;
+     display: inline;
+     float: right;
+     word-spacing: 13px;
+     font-size: 22px;
+     font-family: MADE Tommy Soft;
+     inline-size: 807px;
+     margin-top: 43px;
   }
   
   .nav > .nav-links > a {
@@ -70,7 +95,7 @@
   }
   
   .nav > .nav-links > a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(181, 204, 255);
   }
   
   .nav > #nav-check {
@@ -122,4 +147,66 @@
       overflow-y: auto;
     }
   }
-  
+.years{
+  font-family: Montserrat;
+  position: absolute;
+  color: white;
+  font-size: 63px;
+  margin-left: 65px;
+  margin-top: 247px;
+  font-weight: 900;
+  font-stretch: expanded;
+}
+
+.of{
+  font-family: Montserrat;
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  margin-left: 65px;
+  margin-top: 317px;
+  font-weight: 500;
+  font-stretch: expanded;
+}
+
+.excellence{
+  font-family: Montserrat;
+  position: absolute;
+  color: white;
+  font-size: 63px;
+  margin-left: 65px;
+  margin-top: 373px;
+  font-weight: 900;
+  font-stretch: expanded;
+}
+
+.mic{
+  position: absolute;
+    width: 1000px;
+    margin-left: 276px;
+    margin-top: 82px;
+}
+
+.bglines{
+  position: absolute;
+  width: 1417px;
+  z-index: -1;
+}
+
+.divider{
+  position: absolute;
+  width: 1420px;
+  margin-top: 621px;
+  z-index: 0;
+}
+
+.explore{
+  font-family: Montserrat;
+  position: absolute;
+  color: white;
+  font-size: 23px;
+  margin-left: 65px;
+  margin-top: 482px;
+  font-weight: 550;
+  font-stretch: expanded;
+}
