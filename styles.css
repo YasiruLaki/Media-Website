@@ -1,212 +1,264 @@
+/* START OF LANDING PAGE */ /* START OF LANDING PAGE */ /* START OF LANDING PAGE */
+
+    /* Background */
+        .bgoverlay{
+          width: 1420px;
+          position: absolute;
+          z-index: -3;
+        }       
+
+        .bg{
+          width: 1420px;
+          height: 957px;
+          background-color: #051946;
+          opacity: 77%;
+          margin-top: -100px;
+          position: absolute;
+          z-index: -2;
+        }
+
+    /* Nav Bar */
+        .toplogo{
+          position: absolute;
+          width: 125px;
+          margin-left: 26px;
+          margin-top: 11px;
+        }
+
+        .signupbtn{
+          display: inline;
+          float: right;
+          font-size: 22px;
+          font-family: MADE Tommy Soft;
+          inline-size: 111px;
+          margin-top: 49px;
+          text-decoration: none;
+          color: black;
+          background-color: white;
+          border-radius: 50%;
+          border-top-left-radius: 17px;
+          border-top-right-radius: 17px;
+          border-bottom-left-radius: 17px;
+          border-bottom-right-radius: 17px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-left: 17px;
+          margin-right: -708px;
+        }
 
 
-.bgoverlay{
-    background-size: cover;
-    width: 1420px;
-    position: absolute;
-    z-index: -3;
-}
+      * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0px;
+          font-family: 'segoe ui';
+        }
+        
+        .nav {
+          height: 0px;
+          width: 100%;
+          position: relative;
+        }
+        
+        .nav > .nav-header {
+          display: inline;
+        }
+        
+        .nav > .nav-header > .nav-title {
+          display: inline-block;
+          font-size: 72px;
+          color: rgb(255, 255, 255);
+          padding: 10px 10px 10px 10px;
+        }
+        
+        .nav > .nav-btn {
+          display: none;
+        }
+        
+        .nav > .nav-links {
+          display: inline;
+          float: right;
+          word-spacing: 13px;
+          font-size: 22px;
+          font-family: MADE Tommy Soft;
+          inline-size: 807px;
+          margin-top: 43px;
+        }
+        
+        .nav > .nav-links > a {
+          display: inline-block;
+          padding: 13px 10px 13px 10px;
+          text-decoration: none;
+          color: #efefef;
+        }
+        
+        .nav > .nav-links > a:hover {
+          color: rgb(181, 204, 255);
+        }
+        
+        .nav > #nav-check {
+          display: none;
+        }
+        
+        /* Mobile Nav Bar */
 
-.bg{
-    width: 1420px;
-    height: 957px;
-    background-color: #051946;
-    opacity: 77%;
-    margin-top: -100px;
-    position: absolute;
-    z-index: -2;
-}
+            @media (max-width:1000px) {
+              .nav > .nav-btn {
+                display: inline-block;
+                position: absolute;
+                right: 50px;
+                top: 33px;
+                width: 100px
+            ;
+              }
+              .nav > .nav-btn > label {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                padding: 13px;
+              }
+              .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+                background-color: rgba(0, 0, 0, 0.3);
+              }
+              .nav > .nav-btn > label > span {
+                display: block;
+                width: 35px;
+                height: 13px;
+                border-top: 3px solid #eee;
+              }
+              .nav > .nav-links {
+                position: absolute;
+                display: block;
+                width: 100%;
+                background-color: #333;
+                height: 0px;
+                transition: all 0.3s ease-in;
+                overflow-y: hidden;
+                top: 50px;
+                left: 0px;
+              }
+              .nav > .nav-links > a {
+                display: block;
+                width: 100%;
+              }
+              .nav > #nav-check:not(:checked) ~ .nav-links {
+                height: 0px;
+              }
+              .nav > #nav-check:checked ~ .nav-links {
+                height: calc(100vh - 50px);
+                overflow-y: auto;
+              }
+            }
 
-.toplogo{
-    position: absolute;
-    width: 125px;
-    margin-left: 26px;
-    margin-top: 11px;
-}
+    /* MAIN TEXT */
+        .years{
+          font-family: Montserrat;
+          display:inline-flexbox;
+          position: absolute;
+          color: white;
+          font-size: 63px;
+          margin-left: 65px;
+          margin-top: 247px;
+          font-weight: 900;
+          font-stretch: expanded;
+        }
 
-.signupbtn{
-    display: inline;
-    float: right;
-    font-size: 22px;
-    font-family: MADE Tommy Soft;
-    inline-size: 111px;
-    margin-top: 49px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    border-radius: 50%;
-    border-top-left-radius: 17px;
-    border-top-right-radius: 17px;
-    border-bottom-left-radius: 17px;
-    border-bottom-right-radius: 17px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 17px;
-    margin-right: -708px;
+        .of{
+          font-family: Montserrat;
+          position: absolute;
+          color: white;
+          font-size: 40px;
+          margin-left: 65px;
+          margin-top: 317px;
+          font-weight: 500;
+          font-stretch: expanded;
+        }
 
-}
+        .excellence{
+          font-family: Montserrat;
+          position: absolute;
+          color: white;
+          font-size: 63px;
+          margin-left: 65px;
+          margin-top: 363px;
+          font-weight: 900;
+          font-stretch: expanded;
+        }
+        .explore{
+          font-family: Montserrat;
+          position: absolute;
+          color: white;
+          font-size: 23px;
+          margin-left: 65px;
+          margin-top: 470px;
+          font-weight: 550;
+          font-stretch: expanded;
+        }
 
+    /* Graphics */
+        .mic{
+          position: absolute;
+          width: 1000px;
+          margin-left: 276px;
+          margin-top: 82px;
+          display: inline;
+        }
 
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0px;
-    font-family: 'segoe ui';
-  }
-  
-  .nav {
-    height: 0px;
-    width: 100%;
-    position: relative;
-  }
-  
-  .nav > .nav-header {
-    display: inline;
-  }
-  
-  .nav > .nav-header > .nav-title {
-    display: inline-block;
-    font-size: 72px;
-    color: rgb(255, 255, 255);
-    padding: 10px 10px 10px 10px;
-  }
-  
-  .nav > .nav-btn {
-    display: none;
-  }
-  
-  .nav > .nav-links {
-     display: inline;
-     float: right;
-     word-spacing: 13px;
-     font-size: 22px;
-     font-family: MADE Tommy Soft;
-     inline-size: 807px;
-     margin-top: 43px;
-  }
-  
-  .nav > .nav-links > a {
-    display: inline-block;
-    padding: 13px 10px 13px 10px;
-    text-decoration: none;
-    color: #efefef;
-  }
-  
-  .nav > .nav-links > a:hover {
-    color: rgb(181, 204, 255);
-  }
-  
-  .nav > #nav-check {
-    display: none;
-  }
-  
-  @media (max-width:600px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
-    }
-    .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
-    }
-    .nav > .nav-links > a {
-      display: block;
-      width: 100%;
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
-  }
-.years{
-  font-family: Montserrat;
-  position: absolute;
-  color: white;
-  font-size: 63px;
-  margin-left: 65px;
-  margin-top: 247px;
-  font-weight: 900;
-  font-stretch: expanded;
-}
+        .bglines{
+          position: absolute;
+          width: 1417px;
+          z-index: -1;
+        }
 
-.of{
-  font-family: Montserrat;
-  position: absolute;
-  color: white;
-  font-size: 40px;
-  margin-left: 65px;
-  margin-top: 317px;
-  font-weight: 500;
-  font-stretch: expanded;
-}
+        .divider{
+          position: absolute;
+          width: 1420px;
+          margin-top: 621px;
+          z-index: 0;
+        }
 
-.excellence{
-  font-family: Montserrat;
-  position: absolute;
-  color: white;
-  font-size: 63px;
-  margin-left: 65px;
-  margin-top: 373px;
-  font-weight: 900;
-  font-stretch: expanded;
-}
+        .arrow{
+          position: absolute;
+          MARGIN-LEFT: 260px;
+          WIDTH: 25px;
+          margin-top: 471px;
 
-.mic{
-  position: absolute;
-    width: 1000px;
-    margin-left: 276px;
-    margin-top: 82px;
-}
+        }
 
-.bglines{
-  position: absolute;
-  width: 1417px;
-  z-index: -1;
-}
+        .arrow:hover{
+          color: rgb(19, 20, 20);
+        }
 
-.divider{
-  position: absolute;
-  width: 1420px;
-  margin-top: 621px;
-  z-index: 0;
-}
+    /* Social Icons */
+        .fblogo{
+          position: absolute;
+          width: 25px;
+          margin-left: 66px;
+          margin-top: 593px;
+        }
 
-.explore{
-  font-family: Montserrat;
-  position: absolute;
-  color: white;
-  font-size: 23px;
-  margin-left: 65px;
-  margin-top: 482px;
-  font-weight: 550;
-  font-stretch: expanded;
-}
+        .instalogo{
+          position: absolute;
+          width: 25px;
+          margin-left: 101px;
+          margin-top: 593px;
+        }
+
+        .ytlogo{
+          position: absolute;
+          width: 25px;  
+          margin-left: 137px;
+          margin-top: 593px;
+
+        }
+
+        .whatsapplogo{
+          position: absolute;
+          width: 25px;
+          margin-left: 175px;
+          margin-top: 593px;
+        }
+
+/* END OF LANDING PAGE */ /* END OF LANDING PAGE */ /* END OF LANDING PAGE */
