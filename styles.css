@@ -1,6 +1,21 @@
 /* START OF LANDING PAGE */ /* START OF LANDING PAGE */ /* START OF LANDING PAGE */
 
     /* Background */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+    body {
+      overflow-x: hidden;
+    }
+
+        .landing-section {
+          background-image: url("Graphics/Background\ new.jpg");
+          height: 100vh;
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+        }
+
         .bgoverlay{
           width: 1420px;
           position: absolute;
@@ -33,20 +48,22 @@
           inline-size: 111px;
           margin-top: 49px;
           text-decoration: none;
-          color: black;
-          background-color: white;
-          border-radius: 50%;
-          border-top-left-radius: 17px;
-          border-top-right-radius: 17px;
-          border-bottom-left-radius: 17px;
-          border-bottom-right-radius: 17px;
+          color: #fafafa;
+          background-color: #8c00ff;
+          border-radius: 10px;
           padding-top: 5px;
           padding-bottom: 5px;
           padding-left: 17px;
           margin-right: -708px;
+          transition: 300ms;
         }
 
-
+        .signupbtn:hover {
+          background-color: white;
+          color: #06205f;
+          transition: 300ms;
+        }
+        
       * {
           box-sizing: border-box;
         }
@@ -91,20 +108,46 @@
           display: inline-block;
           padding: 13px 10px 13px 10px;
           text-decoration: none;
-          color: #efefef;
+          color: #e9e9e9;
         }
         
         .nav > .nav-links > a:hover {
-          color: rgb(181, 204, 255);
+          color: rgb(255, 255, 255);
         }
         
         .nav > #nav-check {
           display: none;
         }
+
+        /* Hover Animation */
+
+        .hover-underline-animation {
+          display: inline-block;
+          position: relative;
+          color: white;
+        }
+        
+        .hover-underline-animation:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: white;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+        
+        .hover-underline-animation:hover:after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
         
         /* Mobile Nav Bar */
 
-            @media (max-width:1000px) {
+            @media (max-width:1024px) {
               .nav > .nav-btn {
                 display: inline-block;
                 position: absolute;
@@ -226,6 +269,7 @@
           margin-top: 471px;
 
         }
+        
 
         .arrow:hover{
           color: rgb(19, 20, 20);
