@@ -1,6 +1,7 @@
 /* ABOUT PAGE */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 /* body {
   overflow-x: hidden;
@@ -222,6 +223,7 @@
 
           .header {
               font-size: 3.5rem;
+              font-family: Poppins;
           }
 
           .about-text {
@@ -229,6 +231,7 @@
               margin-right: 5rem;
               margin-top: 3rem;
               font-size: 1rem;
+              font-family: Poppins;
           }
 
           .signupbtn {
