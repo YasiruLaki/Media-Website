@@ -3,9 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
-/* body {
+body {
   overflow-x: hidden;
-} */
+  margin-bottom: 0;
+}
 
     .about {
       background-image: url(../Graphics/Background\ new.jpg);
@@ -41,20 +42,18 @@
     }
 
     .signupbtn{
-      display: inline !important;
-      float: right;
+      display: inline-block; 
       font-size: 22px;
-      font-family: MADE Tommy Soft;
-      inline-size: 111px;
-      margin-top: 49px;
+      font-family: "MADE Tommy Soft";
+      word-spacing: 0.5px;
       text-decoration: none;
       color: #fafafa;
       background-color: #8c00ff;
       border-radius: 10px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-left: 17px;
-      margin-right: -708px;
+      margin-right: 4rem;
+      padding: 5px;
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
       transition: 300ms;
     }
 
@@ -103,16 +102,17 @@
       font-family: MADE Tommy Soft;
       inline-size: 807px;
       margin-top: 43px;
+      margin-right: 1.9rem;
     }
     
-    .nav > .nav-links > a {
+    .nav-link {
       display: inline-block;
       padding: 13px 10px 13px 10px;
       text-decoration: none;
-      color: #e9e9e9;
+      color: #e0e0e0;
     }
     
-    .nav > .nav-links > a:hover {
+    .nav-link:hover {
       color: rgb(255, 255, 255);
     }
     
@@ -125,7 +125,6 @@
     .hover-underline-animation {
       display: inline-block;
       position: relative;
-      color: white;
     }
     
     .hover-underline-animation:after {
@@ -163,15 +162,15 @@
 
     .about-text {
         color: white;
-        margin-left: 10rem;
-        margin-right: 10rem;
+        margin-left: 9rem;
+        margin-right: 9rem;
         margin-top: 6rem;
         font-size: 1.3rem;
         text-align: justify;
         font-weight: 200;
     }
     
-    /* Mobile Nav Bar */
+    /* Laptop Nav Bar */
 
         @media (max-width:1024px) {
           .nav > .nav-btn {
@@ -207,7 +206,7 @@
             top: 50px;
             left: 0px;
           }
-          .nav > .nav-links > a {
+          .nav-link {
             display: block;
             width: 100%;
           }
@@ -232,7 +231,7 @@
               margin-left: 5rem;
               margin-right: 5rem;
               margin-top: 3rem;
-              font-size: 1rem;
+              font-size: 1.1rem;
               font-family: Poppins;
           }
 
@@ -241,5 +240,22 @@
               float: none;
               width: 111px !important;
           }
+        }
+
+        /* Phone Responsive */
+
+        @media (max-width:480px) {
+
+          .header {
+            font-size: 3rem;
+          }
+
+          .about-text {
+            margin-left: 3rem;
+            margin-right: 3rem;
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+          }
+          
         }
 
