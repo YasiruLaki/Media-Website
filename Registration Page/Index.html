@@ -37,7 +37,6 @@
  <!-- FORM -->
     <div class="container">
       <span class="big-circle"></span>
-      <img src="img/shape.png" class="square" alt="" />
       <div class="form">
         <div class="contact-info">
           <h3 class="title">Final Rounds Of Thissa Jayawardhane Memorial Inter School Media Competition</h3>
@@ -78,54 +77,54 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="index.html" autocomplete="off">
+          <form action="index.html" autocomplete="off" id="regform">
             <h3 class="title">Register Here!</h3>
            
             <div class="input-container">
               <div class="inputlabelname">Full Name</div>
-              <input type="text" name="fullname" class="input" />
+              <input type="text" id="fullname" class="input" />
               <label for="">Full Name</label>
               <span>Full Name</span>
             </div>
 
             <div class="input-container">
               <div class="inputlabelname">Name With Initials</div>
-              <input type="text" name="namewithinitials" class="input" />
+              <input type="text" id="namewithinitials" class="input" />
               <label for="">Name With Initials</label>
               <span>Name with Initials</span>
             </div>
 
             <div class="input-container">
               <div class="inputlabelname">Email</div>
-              <input type="email" name="email" class="input" />
+              <input type="email" id="email" class="input" />
               <label for="">Email</label>
               <span>Email</span>
             </div>
 
             <div class="input-container">
               <div class="inputlabelname">Date Of Birth</div>
-              <input type="date" name="dob" class="inputdob" />
+              <input type="date" id="dob" class="inputdob" />
               <label for="">Date Of Birth</label>
               <span>Date Of Birth</span>
             </div>
 
             <div class="input-container">
               <div class="inputlabelname">School</div>
-              <input type="text" name="school" class="input" />
+              <input type="text" id="school" class="input" />
               <label for="">School</label>
               <span>School</span>
             </div>
 
             <div class="input-container">
               <div class="inputlabelname">Contact Number</div>
-              <input type="tel" name="contactno1" class="input" />
+              <input type="tel" id="contactno" class="input" />
               <label for="">Contact No.</label>
               <span>Phone</span>
             </div>
 
             <div class="input-container">
               <div class="inputlabelname">WhatsApp Number</div>
-              <input type="tel" name="whatsappno" class="input" />
+              <input type="tel" id="whatsappno" class="input" />
               <label for="">WhatsApp No.</label>
               <span>Phone</span>
             </div>
@@ -133,7 +132,7 @@
             <div class="input-container textarea">
               <div class="inputlabelname">Category</div>
               <label for="" hidden>Category</label>
-              <select name="category" class="input" aria-label="Category">
+              <select id="category" class="input" aria-label="Category">
                     <option value="--Category--" hidden></option>
                     <option value="Sinhala Announcing">Sinhala Announcing</option>
                     <option value="English Announcing">English Announcing</option>
@@ -145,7 +144,7 @@
 
             <div class="input-container">
                 <div class="inputlabelname">Comments</div>
-                <input type="text" name="comments" class="input" />
+                <input type="text" id="comments" class="input" />
                 <label for="">WhatsApp No.</label>
                 <span>Phone</span>
               </div>
@@ -161,6 +160,8 @@
         <!-- <div class="bg"></div>
         <img src="Graphics/Background Image.png" class="bgoverlay"> -->
 
-    <script src="app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+   <script src="/Registration Page/form.js"></script>
+   
   </body>
 </html>

@@ -222,9 +222,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-family: "Montserrat";
-}
 .container {
   min-height: 100vh;
   width: 100%;
@@ -246,7 +243,7 @@ html {
 }
 .timeline ul li {
   padding: 20px;
-  background-color: #1e1f22;
+  background: linear-gradient(#93beff,#6487fb);
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;

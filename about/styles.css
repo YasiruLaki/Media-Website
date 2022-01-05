@@ -8,8 +8,8 @@
 } */
 
     .about {
-      background-image: url("../Graphics/Background\ new.jpg");
-      height: 150vh;
+      background-image: url(../Graphics/Background\ new.jpg);
+      height: 175vh;
       width: 100%;
       background-size: cover;
       background-position: center;
@@ -88,6 +88,7 @@
       font-size: 72px;
       color: rgb(255, 255, 255);
       padding: 10px 10px 10px 10px;
+
     }
     
     .nav > .nav-btn {
@@ -150,6 +151,7 @@
     .content {
         text-align: center;
         margin-top: 10rem;
+        font-family: poppins;
     }
 
     .header {
