@@ -354,7 +354,7 @@
   color: white;
   text-align: center;
   font-size: 25px;
-  backdrop-filter: blur(10px) ;
+  backdrop-filter: blur(20px) ;
   padding: 3px;
 
 }
