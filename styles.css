@@ -8,12 +8,17 @@
     }
     
         .landing-section {
-          background-image: url("Graphics/Background\ new.jpg");
+          background-color: rgb(0, 0, 0);
           height: 300vh;
           width: 100%;
           background-size: cover;
           background-position: center;
+          background-image: url("Graphics/PageBG.png");
           background-attachment: fixed;
+          padding-top: 20px;
+          padding-bottom: 2000px;
+          
+
         }
 
         .bgoverlay{
@@ -102,7 +107,6 @@
           font-family: MADE Tommy Soft;
           inline-size: 807px;
           margin-top: 43px;
-          text-align: center;
         }
         
         .nav > .nav-links > a {
@@ -319,6 +323,7 @@
   font-weight: normal;
   margin-top: 1114px;
   text-align: center;
+  padding-top: 20px;
 }
 
 .about-paragraph{
@@ -330,8 +335,9 @@
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
+  padding-bottom: 35px;
 }
 
 .about{
-  position: absolute;
+  backdrop-filter: blur(13px);
 }
