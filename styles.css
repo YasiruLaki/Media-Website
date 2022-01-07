@@ -348,6 +348,11 @@
 
 
 /* START OF BLOCKS */ /* START OF BLOCKS */ /* START OF BLOCKS */
+.blocks {
+  display: flex;
+  flex-direction: row;
+
+}
 
 .block1{
   width: 26%;
@@ -356,8 +361,7 @@
   text-align: center;
   font-size: 25px;
   backdrop-filter: blur(20px) ;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 12px;
   box-shadow: 0px 0px 15px 0px #000000;
   padding-bottom: 20px;
   float: left;
@@ -397,6 +401,12 @@
   padding-left: 7px;
 }
 
+.block1-btn:hover {
+  background-color: white;
+  color: #06205f;
+  transition: 300ms;
+}
+
 
 .block3{
   width: 26%;
@@ -407,9 +417,7 @@
   padding-bottom: 20px;
   float: right;
   margin-right: 70px;
-  margin-top: -380px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 12px;
   box-shadow: 0px 0px 15px 0px #000000;
 
 
@@ -447,6 +455,12 @@
   padding-left: 7px;
 }
 
+.block3-btn:hover {
+  background-color: white;
+  color: #06205f;
+  transition: 300ms;
+}
+
 
 
 
@@ -459,8 +473,7 @@
   backdrop-filter: blur(20px) ;
   padding-bottom: 20px;
   margin: 0 auto;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 12px;
   box-shadow: 0px 0px 15px 0px #000000;
 
 }
@@ -495,6 +508,12 @@
   transition: 300ms;
   padding-right: 7px;
   padding-left: 7px;
+}
+
+.block2-btn:hover {
+  background-color: white;
+  color: #06205f;
+  transition: 300ms;
 }
 
 
