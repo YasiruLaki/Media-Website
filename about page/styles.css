@@ -1,0 +1,261 @@
+/* ABOUT PAGE */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+  overflow-x: hidden;
+  margin-bottom: 0;
+}
+
+    .about {
+      background-image: url(../Graphics/Background\ new.jpg);
+      height: 175vh;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .bgoverlay{
+      width: 1420px;
+      position: absolute;
+      z-index: -3;
+    }       
+
+    .bg{
+      width: 1420px;
+      height: 957px;
+      background-color: #051946;
+      opacity: 77%;
+      margin-top: -100px;
+      position: absolute;
+      z-index: -2;
+    }
+
+/* Nav Bar */
+    .toplogo{
+      position: absolute;
+      width: 125px;
+      margin-left: 26px;
+      margin-top: 11px;
+    }
+
+    .signupbtn{
+      display: inline-block; 
+      font-size: 22px;
+      font-family: "MADE Tommy Soft";
+      word-spacing: 0.5px;
+      text-decoration: none;
+      color: #fafafa;
+      background-color: #8c00ff;
+      border-radius: 10px;
+      margin-right: 4rem;
+      padding: 5px;
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+      transition: 300ms;
+    }
+
+    .signupbtn:hover {
+      background-color: white;
+      color: #06205f;
+      transition: 300ms;
+    }
+    
+  * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0px;
+      font-family: 'segoe ui';
+    }
+    
+    .nav {
+      height: 0px;
+      width: 100%;
+      position: relative;
+    }
+    
+    .nav > .nav-header {
+      display: inline;
+    }
+    
+    .nav > .nav-header > .nav-title {
+      display: inline-block;
+      font-size: 72px;
+      color: rgb(255, 255, 255);
+      padding: 10px 10px 10px 10px;
+
+    }
+    
+    .nav > .nav-btn {
+      display: none;
+    }
+    
+    .nav > .nav-links {
+      display: inline;
+      float: right;
+      word-spacing: 13px;
+      font-size: 22px;
+      font-family: MADE Tommy Soft;
+      inline-size: 807px;
+      margin-top: 43px;
+      margin-right: 1.9rem;
+    }
+    
+    .nav-link {
+      display: inline-block;
+      padding: 13px 10px 13px 10px;
+      text-decoration: none;
+      color: #e0e0e0;
+    }
+    
+    .nav-link:hover {
+      color: rgb(255, 255, 255);
+    }
+    
+    .nav > #nav-check {
+      display: none;
+    }
+
+    /* Hover Animation */
+
+    .hover-underline-animation {
+      display: inline-block;
+      position: relative;
+    }
+    
+    .hover-underline-animation:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    
+    .hover-underline-animation:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    /* ABOUT PAGE CONTENT */
+
+    .content {
+        text-align: center;
+        margin-top: 10rem;
+        font-family: poppins;
+    }
+
+    .header {
+        font-size: 4.2rem;
+        color: white;
+        letter-spacing: 0.1rem;
+
+    }
+
+    .about-text {
+        color: white;
+        margin-left: 9rem;
+        margin-right: 9rem;
+        margin-top: 6rem;
+        font-size: 1.3rem;
+        text-align: justify;
+        font-weight: 200;
+    }
+    
+    /* Laptop Nav Bar */
+
+        @media (max-width:1024px) {
+          .nav > .nav-btn {
+            display: inline-block;
+            position: absolute;
+            right: 70px;
+            top: 33px;
+            width: 60px;
+          }
+          .nav > .nav-btn > label {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            padding: 13px;
+          }
+          .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+            background-color: rgba(0, 0, 0, 0.3);
+          }
+          .nav > .nav-btn > label > span {
+            display: block;
+            width: 35px;
+            height: 13px;
+            border-top: 3px solid #eee;
+          }
+          .nav > .nav-links {
+            position: absolute;
+            display: block;
+            width: 100%;
+            background-color: #333;
+            height: 0px;
+            transition: all 0.3s ease-in;
+            overflow-y: hidden;
+            top: 50px;
+            left: 0px;
+          }
+          .nav-link {
+            display: block;
+            width: 100%;
+          }
+          .nav > #nav-check:not(:checked) ~ .nav-links {
+            height: 0px;
+          }
+          .nav > #nav-check:checked ~ .nav-links {
+            height: calc(100vh - 50px);
+            overflow-y: auto;
+          }
+
+          .about {
+              background-size: cover;
+          }
+
+          .header {
+              font-size: 3.5rem;
+              font-family: Poppins;
+          }
+
+          .about-text {
+              margin-left: 5rem;
+              margin-right: 5rem;
+              margin-top: 3rem;
+              font-size: 1.1rem;
+              font-family: Poppins;
+          }
+
+          .signupbtn {
+              display: block;
+              float: none;
+              width: 111px !important;
+          }
+        }
+
+        /* Phone Responsive */
+
+        @media (max-width:480px) {
+
+          .header {
+            font-size: 3rem;
+          }
+
+          .about-text {
+            margin-left: 3rem;
+            margin-right: 3rem;
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+          }
+          
+        }
+
