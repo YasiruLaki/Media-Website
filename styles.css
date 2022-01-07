@@ -249,10 +249,11 @@
     /* Graphics */
         .mic{
           position: absolute;
-          width: 1000px;
-          margin-left: 276px;
-          margin-top: 82px;
+          width: 784px;
+          margin-left: 583px;
+          margin-top: 115px;
           display: inline;
+          opacity: 80%;
         }
 
         .bglines{
@@ -355,8 +356,13 @@
   text-align: center;
   font-size: 25px;
   backdrop-filter: blur(20px) ;
-  padding: 3px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: 0px 0px 15px 0px #000000;
+  padding-bottom: 20px;
+  float: left;
 
+  
 }
 
 .thissa-graphic{
@@ -370,8 +376,128 @@
 
 .block1-text{
   font-size: 15px;
+  margin-bottom: 2px;
   
 }
+
+.block1-btn{
+  display: inline;
+  font-size: 17px;
+  font-family: MADE Tommy Soft;
+  inline-size: 111px;
+  margin-top: 49px;
+  text-decoration: none;
+  color: #fafafa;
+  background-color: #8c00ff;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 300ms;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+
+.block3{
+  width: 26%;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  backdrop-filter: blur(20px) ;
+  padding-bottom: 20px;
+  float: right;
+  margin-right: 70px;
+  margin-top: -380px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: 0px 0px 15px 0px #000000;
+
+
+}
+
+.gallery-graphic{
+  width: 100%;
+  opacity: 80%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 133px;
+  object-fit: cover;
+}
+
+.block3-text{
+  font-size: 15px;
+  margin-bottom: 2px;
+  
+}
+
+.block3-btn{
+  display: inline;
+  font-size: 17px;
+  font-family: MADE Tommy Soft;
+  inline-size: 111px;
+  margin-top: 49px;
+  text-decoration: none;
+  color: #fafafa;
+  background-color: #8c00ff;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 300ms;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+
+
+
+
+.block2{
+  width: 26%;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  backdrop-filter: blur(20px) ;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: 0px 0px 15px 0px #000000;
+
+}
+
+.trophy-graphic{
+  width: 100%;
+  opacity: 80%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 133px;
+  object-fit: cover;
+}
+
+.block2-text{
+  font-size: 15px;
+  margin-bottom: 2px;
+  
+}
+
+.block2-btn{
+  display: inline;
+  font-size: 17px;
+  font-family: MADE Tommy Soft;
+  inline-size: 111px;
+  margin-top: 49px;
+  text-decoration: none;
+  color: #fafafa;
+  background-color: #8c00ff;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 300ms;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+
 
 
 
