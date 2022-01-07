@@ -416,6 +416,22 @@
   transition: 300ms;
 }
 
+  /* Mobile View Block1 */
+
+     @media (max-width:1160px) {
+      .block1{
+        width: 55%;
+        margin-right: 50px;
+      }
+    }
+
+    @media (max-width:780px) {
+      .block1{
+        width: auto;
+        float: none;
+        margin-right: 70px
+      }
+      }
 
 .block3{
   width: 26%;
@@ -482,8 +498,18 @@
   transition: 300ms;
 }
 
+    /* Mobile View Block3 */
 
+    @media (max-width:1160px) {
+    .block3{
+      width: 35%;
+      margin: 0,auto;
+      float: none;
+      display: none;
+      
 
+    }
+  }
 
 
 .block2{
@@ -548,8 +574,21 @@
 }
 
 
+    /* Mobile View Block2 */
 
+    @media (max-width:1160px) {
+    .block2{
+      width: 55%;
+      float: left;
+      margin-right: 70px
+    }
+    }
 
+    @media (max-width:780px) {
+      .block2{
+        display: none
+    }
+    }
 
 
 
