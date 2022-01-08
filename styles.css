@@ -2,6 +2,7 @@
 
     /* Background */
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
     body {
       overflow-x: hidden;
@@ -249,11 +250,11 @@
     /* Graphics */
         .mic{
           position: absolute;
-          width: 784px;
-          margin-left: 583px;
-          margin-top: 115px;
+          width: 664px;
+          margin-left: 676px;
+          margin-top: 144px;
           display: inline;
-          opacity: 80%;
+           opacity: 80%;
         }
 
         .bglines{
@@ -592,6 +593,25 @@
 
 
 
+
+/* We Are The... */
+
+.we-are-the{
+  background-image: url(Graphics/eaglebg.png);
+  background-attachment: fixed;
+  height: 200px;
+  opacity: 80%;
+}
+
+
+.we-are-the-txt{
+  font-size: 55px;
+  color: white;
+  font-family: Rock Salt;
+  text-align: center;
+  padding-top: 30px;
+  text-decoration: double
+}
 
 
 
