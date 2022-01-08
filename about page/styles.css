@@ -10,7 +10,7 @@ body {
 
     .about {
       background-image: url(../Graphics/Background\ new.jpg);
-      height: 175vh;
+      min-height: 190vh;
       width: 100%;
       background-size: cover;
       background-position: center;
@@ -219,7 +219,7 @@ body {
           }
 
           .about {
-              background-size: cover;
+              min-height: 220vh;
           }
 
           .header {
@@ -248,6 +248,10 @@ body {
 
           .header {
             font-size: 3rem;
+          }
+
+          .about {
+            min-height: 300vh;
           }
 
           .about-text {
