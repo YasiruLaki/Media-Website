@@ -46,15 +46,15 @@ body {
    font-size: 22px;
    font-family: MADE Tommy Soft;
    inline-size: 111px;
-   margin-top: 49px;
    text-decoration: none;
+   word-spacing: 1px;
    color: #fafafa;
    background-color: #8c00ff;
    border-radius: 10px;
+   margin-right: 4rem;
    padding-top: 5px;
    padding-bottom: 5px;
    padding-left: 17px;
-   margin-right: -708px;
    transition: 300ms;
 }
 
@@ -105,8 +105,19 @@ body {
    inline-size: 807px;
    margin-top: 43px;
 }
+
+.nav-link {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+}
         
-.nav > .nav-links > a {
+/* .nav > .nav-links > a {
    display: inline-block;
    padding: 13px 10px 13px 10px;
    text-decoration: none;
@@ -114,8 +125,8 @@ body {
 }
         
 .nav > .nav-links > a:hover {
-   color: rgb(255, 255, 255);
-}
+   color: rgb(255, 255, 255); 
+} */
         
 .nav > #nav-check {
    display: none;
@@ -198,6 +209,16 @@ body {
     .nav > #nav-check:checked ~ .nav-links {
         height: calc(100vh - 50px);
         overflow-y: auto;
+    }
+
+    .signupbtn {
+      display: block;
+      float: none;
+      width: 111px !important;
+  }
+
+    .topic {
+      font-size: 35px;
     }
 }
 
