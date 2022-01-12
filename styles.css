@@ -444,6 +444,7 @@
   display: flex;
   flex-direction: row;
   margin-top: 100px;
+  box-sizing: border-box;
 
 }
 
@@ -453,11 +454,9 @@
   color: white;
   text-align: center;
   font-size: 25px;
-  backdrop-filter: blur(20px) ;
   border-radius: 12px;
   box-shadow: 0px 0px 15px 0px #000000;
   padding-bottom: 20px;
-  float: left;
   font-family: poppins;
 
   
@@ -522,7 +521,6 @@
     @media (max-width:780px) {
       .block1{
         width: auto;
-        float: none;
         margin-right: 70px
       }
       }
@@ -532,9 +530,7 @@
   color: white;
   text-align: center;
   font-size: 25px;
-  backdrop-filter: blur(20px) ;
   padding-bottom: 20px;
-  float: right;
   margin-right: 70px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -598,7 +594,6 @@
   color: white;
   text-align: center;
   font-size: 25px;
-  backdrop-filter: blur(30px) ;
   padding-bottom: 20px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -642,7 +637,6 @@
   color: white;
   text-align: center;
   font-size: 25px;
-  backdrop-filter: blur(20px) ;
   padding-bottom: 20px;
   margin: 0 auto;
   border-radius: 12px;
@@ -834,3 +828,124 @@
         height: 210px;
       }
     }
+
+
+
+/* Announcements & Events */
+
+/* @apply doesn't work in Codepen 😥 */
+
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap");
+
+* {
+  font-family: "Syne", sans-serif;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+.News-box{
+  max-width: 2xl;
+  margin-top: 550px;
+}
+
+    @media (max-width: 1227px){
+      .News-box{
+        margin-top: 620px;
+      }
+    }
+
+    @media (max-width: 1160px){
+      .News-box{
+        margin-top: 940px;
+      }
+    }
+
+    @media (max-width: 1030px){
+      .News-box{
+        margin-top: 980px;
+      }
+    }
+
+    @media (max-width: 880px){
+      .News-box{
+        margin-top: 1020px;
+      }
+    }
+
+    @media (max-width: 812px){
+      .News-box{
+        margin-top: 1120px;
+      }
+    }
+
+.heading{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+
+.article-box{
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 25px;
+}
+
+.article-category{
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: blue;
+  font-size: 17px;
+  padding-bottom: 0%;
+}
+
+.article-topic{
+  padding-bottom: 0%;
+  color: black;
+  font-size: 33px;
+  padding-top: 0%;
+  margin-top: 7px;
+  margin-bottom: 0%;
+
+}
+
+.article-para{
+  margin-top: 10px;
+  padding-top: 0%;
+  font-size: 17px;
+  font-family: poppins;
+}
+
+.article-img{
+  object-fit: cover;
+}
+
+.article-btn{
+  background-color: blue;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+  .article-btn:hover{
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    color: black;
+    transition: ease-in;
+    cursor: pointer;
+    transition: 200ms;
+  }
+
+
+
+  
