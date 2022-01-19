@@ -360,6 +360,7 @@
         @media (max-width:760px){
           .fblogo{
             margin-top: 38px;
+            margin: 0,auto;
           }
 
         }
@@ -889,7 +890,8 @@ body{
 }
 
 .article-box{
-  background-color: white;
+  backdrop-filter: blur(10px);
+  background-color: #b4d3f065;
   border-radius: 10px;
   overflow: hidden;
   width: 60%;
