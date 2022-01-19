@@ -834,8 +834,6 @@
 
 /* Announcements & Events */
 
-/* @apply doesn't work in Codepen 😥 */
-
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap");
 
 * {
@@ -948,6 +946,9 @@ body{
     transition: 200ms;
   }
 
+
+
+/*Contact Form */
 
 
   

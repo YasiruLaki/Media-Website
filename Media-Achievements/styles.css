@@ -7,7 +7,7 @@ body {
 }
 
 .landing-section {
-   background-image: url("Graphics/Background\ new.jpg");
+   background-image: url("/graphics/PageBG.png");
    height: 204vh;
    width: 100%;
    background-size: cover;
@@ -264,10 +264,11 @@ body {
 }
 .timeline ul li {
   padding: 20px;
-  background: linear-gradient(#93beff,#6487fb);
+  backdrop-filter: blur(60px);
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
+  box-shadow: 1px 0px 10px 1px #000000;
 }
 .timeline ul li:last-child {
   margin-bottom: 0;
@@ -344,3 +345,118 @@ body {
 }
 
     
+
+
+/* Wednesday Awards */
+
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap");
+
+* {
+  font-family: "Syne", sans-serif;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+.News-box{
+  max-width: 2xl;
+  margin-top: 550px;
+}
+
+    @media (max-width: 1227px){
+      .News-box{
+        margin-top: 620px;
+      }
+    }
+
+    @media (max-width: 1160px){
+      .News-box{
+        margin-top: 940px;
+      }
+    }
+
+    @media (max-width: 1030px){
+      .News-box{
+        margin-top: 980px;
+      }
+    }
+
+    @media (max-width: 880px){
+      .News-box{
+        margin-top: 1020px;
+      }
+    }
+
+    @media (max-width: 812px){
+      .News-box{
+        margin-top: 1120px;
+      }
+    }
+
+.heading{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+
+.article-box{
+  backdrop-filter: blur(10px);
+  background-color: #b4d3f065;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 25px;
+}
+
+.article-category{
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: blue;
+  font-size: 17px;
+  padding-bottom: 0%;
+}
+
+.article-topic{
+  padding-bottom: 0%;
+  color: black;
+  font-size: 33px;
+  padding-top: 0%;
+  margin-top: 7px;
+  margin-bottom: 0%;
+
+}
+
+.article-para{
+  margin-top: 10px;
+  padding-top: 0%;
+  font-size: 17px;
+  font-family: poppins;
+}
+
+.article-img{
+  object-fit: cover;
+}
+
+.article-btn{
+  background-color: blue;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+  .article-btn:hover{
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    color: black;
+    transition: ease-in;
+    cursor: pointer;
+    transition: 200ms;
+  }
