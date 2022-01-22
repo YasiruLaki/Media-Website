@@ -32,195 +32,204 @@ body {
 }
 
 
-/* Nav Bar */
-.toplogo{
-   position: absolute;
-   width: 125px;
-   margin-left: 26px;
-   margin-top: 11px;
-}
-
-.signupbtn{
-   display: inline;
-   float: right;
-   font-size: 22px;
-   font-family: MADE Tommy Soft;
-   inline-size: 111px;
-   text-decoration: none;
-   word-spacing: 1px;
-   color: #fafafa;
-   background-color: #8c00ff;
-   border-radius: 10px;
-   margin-right: 4rem;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   padding-left: 17px;
-   transition: 300ms;
-}
-
-
-.signupbtn:hover {
-   background-color: white;
-   color: #06205f;
-   transition: 300ms;
-}
-      
-
-* {
-   box-sizing: border-box;
-}
-        
-body {
-   margin: 0px;
-   font-family: 'segoe ui';
-}
-        
-.nav {
-   height: 0px;
-   width: 100%;
-   position: relative;
-}
-        
-.nav > .nav-header {
-   display: inline;
-}
-        
-.nav > .nav-header > .nav-title {
-   display: inline-block;
-   font-size: 72px;
-   color: rgb(255, 255, 255);
-   padding: 10px 10px 10px 10px;
-}
-        
-.nav > .nav-btn {
-   display: none;
-}
-        
-.nav > .nav-links {
-   display: inline;
-   float: right;
-   word-spacing: 13px;
-   font-size: 22px;
-   font-family: MADE Tommy Soft;
-   inline-size: 807px;
-   margin-top: 43px;
-}
-
-.nav-link {
-  display: inline-block;
-  padding: 13px 10px 13px 10px;
-  text-decoration: none;
-  color: #e0e0e0;
-}
-
-.nav-link:hover {
-  color: rgb(255, 255, 255);
-}
-        
-/* .nav > .nav-links > a {
-   display: inline-block;
-   padding: 13px 10px 13px 10px;
-   text-decoration: none;
-   color: #e9e9e9;
-}
-        
-.nav > .nav-links > a:hover {
-   color: rgb(255, 255, 255); 
-} */
-        
-.nav > #nav-check {
-   display: none;
-}
-
-
-/* Hover Animation */
-
-.hover-underline-animation {
-   display: inline-block;
-   position: relative;
-   color: white;
-}
-        
-.hover-underline-animation:after {
-   content: '';
-   position: absolute;
-   width: 100%;
-   transform: scaleX(0);
-   height: 2px;
-   bottom: 0;
-   left: 0;
-   background-color: white;
-   transform-origin: bottom right;
-   transition: transform 0.25s ease-out;
-}
-        
-.hover-underline-animation:hover:after {
-   transform: scaleX(1);
-   transform-origin: bottom left;
-}
-        
-
-/* Mobile Nav Bar */
-
-@media (max-width:1024px) {
-    .nav > .nav-btn {
-        display: inline-block;
-        position: absolute;
-        right: 50px;
-        top: 33px;
-        width: 100px;
+    /* Nav Bar */
+    .toplogo{
+      position: absolute;
+      width: 125px;
+      margin-left: 26px;
+      margin-top: 11px;
     }
-    .nav > .nav-btn > label {
+
+    .signupbtn{
+      display: inline-block; 
+      font-size: 22px;
+      font-family: "MADE Tommy Soft";
+      word-spacing: 0.5px;
+      text-decoration: none;
+      color: #fafafa;
+      background-color: #8c00ff;
+      border-radius: 10px;
+      margin-right: 4rem;
+      padding: 5px;
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+      transition: 300ms;
+      margin: auto;
+    }
+
+    .signupbtn:hover {
+      background-color: white;
+      color: #06205f;
+      transition: 300ms;
+    }
+    
+  * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0px;
+      font-family: 'segoe ui';
+    }
+    
+    .nav {
+      height: 0px;
+      width: 100%;
+      position: relative;
+    }
+    
+    .nav > .nav-header {
+      display: inline;
+    }
+    
+    .nav > .nav-header > .nav-title {
+      display: inline-block;
+      font-size: 72px;
+      color: rgb(255, 255, 255);
+      padding: 10px 10px 10px 10px;
+
+    }
+    
+    .nav > .nav-btn {
+      display: none;
+    }
+    @media (max-width: 1024px){
+      .nav > .nav-btn > label {
         display: inline-block;
         width: 50px;
         height: 50px;
-        padding: 13px;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-        background-color: rgba(0, 0, 0, 0.3);
+        padding: 10px;
+      }
     }
     
-    .nav > .nav-btn > label > span {
-        display: block;
-        width: 35px;
-        height: 13px;
-        border-top: 3px solid #eee;
-    }
-            
     .nav > .nav-links {
-        position: absolute;
-        display: block;
-        width: 100%;
-        background-color: #333;
-        height: 0px;
-        transition: all 0.3s ease-in;
-        overflow-y: hidden;
-        top: 50px;
-        left: 0px;
+      display: inline;
+      float: right;
+      word-spacing: 13px;
+      font-size: 22px;
+      font-family: MADE Tommy Soft;
+      inline-size: 807px;
+      margin-top: 43px;
+      margin-right: 1.9rem;
     }
     
-    .nav > .nav-links > a {
-        display: block;
-        width: 100%;
+    .nav-link {
+      display: inline-block;
+      text-align: center;
+      padding: 10px 10px 10px 10px;
+      text-decoration: none;
+      color: #e0e0e0;
     }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-        height: 0px;
+    
+    .nav-link:hover {
+      color: rgb(255, 255, 255);
     }
-    .nav > #nav-check:checked ~ .nav-links {
-        height: calc(100vh - 50px);
-        overflow-y: auto;
+    
+    .nav > #nav-check {
+      display: none;
     }
 
-    .signupbtn {
-      display: block;
-      float: none;
-      width: 111px !important;
-  }
+    /* Hover Animation */
 
-    .topic {
-      font-size: 35px;
+    .hover-underline-animation {
+      display: inline-block;
+      position: relative;
     }
-}
+    
+    .hover-underline-animation:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    
+    .hover-underline-animation:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+      
+        /* Laptop Nav Bar */
+
+        @media (max-width:1024px) {
+          .nav > .nav-btn {
+            display: inline-block;
+            position: absolute;
+            right: 70px;
+            top: 33px;
+            width: 60px;
+          }
+          .nav > .nav-btn > label {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+          }
+          .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+            background-color: rgba(0, 0, 0, 0.3);
+          }
+          .nav > .nav-btn > label > span {
+            display: block;
+            width: 35px;
+            height: 13px;
+            border-top: 3px solid #eee;
+          }
+          .nav > .nav-links {
+            margin-top: 72px;
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 20px;
+            transition: all 0.3s ease-in;
+            overflow-y: hidden;
+            top: 50px;
+            left: 0px;
+            backdrop-filter: blur(20px);
+            z-index: 200;
+          }
+          .nav-link {
+            display: block;
+            width: 100%;
+          }
+          .nav > #nav-check:not(:checked) ~ .nav-links {
+            height: 0px;
+          }
+          .nav > #nav-check:checked ~ .nav-links {
+            height: calc(52vh - 50px);
+            overflow-y: auto;
+          }
+
+          .about {
+              min-height: 220vh;
+          }
+
+          .header {
+              font-size: 3.5rem;
+              font-family: Poppins;
+          }
+
+          .about-text {
+              margin-left: 5rem;
+              margin-right: 5rem;
+              margin-top: 3rem;
+              font-size: 1.1rem;
+              font-family: Poppins;
+          }
+
+          .signupbtn {
+              display: block;
+              float: none;
+              width: 111px !important;
+          }
+        }
+
+
 
 
 /* TITLE */     
@@ -235,6 +244,18 @@ body {
     margin-top: 150px;
     text-align: center;
 }
+
+  @media (max-width:770px){
+    .topic{
+      font-size: 30px
+    }
+  }
+
+  @media (max-width:560px){
+    .topic{
+      font-size: 25px
+    }
+  }
 
 /* TIMELINE */     
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
