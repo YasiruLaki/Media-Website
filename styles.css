@@ -620,8 +620,7 @@
   font-size: 25px;
   padding-bottom: 20px;
   margin-right: 70px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 10px;
   box-shadow: 0px 0px 15px 0px #000000;
   font-family: poppins;
 
@@ -683,8 +682,7 @@
   text-align: center;
   font-size: 25px;
   padding-bottom: 20px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 10px;
   box-shadow: 0px 0px 15px 0px #000000;
   margin-top: 40px;
   font-family: poppins;
@@ -727,7 +725,7 @@
   font-size: 25px;
   padding-bottom: 20px;
   margin: 0 auto;
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: 0px 0px 15px 0px #000000;
   font-family: poppins;
 
@@ -1003,8 +1001,9 @@
 }
 
 .article-box{
-  backdrop-filter: blur(10px);
-  background-color: #b4d3f065;
+  backdrop-filter: blur(13px);
+  /* background-color: rgb(246, 209, 255); */
+  box-shadow: 0px 0px 10px 0px black;
   border-radius: 10px;
   overflow: hidden;
   width: 60%;
@@ -1016,14 +1015,14 @@
 .article-category{
   text-transform: uppercase;
   font-weight: bolder;
-  color: blue;
+  color: #be70fd;
   font-size: 17px;
   padding-bottom: 0%;
 }
 
 .article-topic{
   padding-bottom: 0%;
-  color: black;
+  color: white;
   font-size: 33px;
   padding-top: 0%;
   margin-top: 7px;
@@ -1032,10 +1031,16 @@
 }
 
 .article-para{
+  color: white;
   margin-top: 10px;
   padding-top: 0%;
   font-size: 17px;
+  font-weight: 300;
   font-family: poppins;
+}
+
+.article-two {
+  margin-top: 2rem;
 }
 
 .article-img{
@@ -1043,22 +1048,20 @@
 }
 
 .article-btn{
-  background-color: blue;
+  background-color: #8c00ff;
   border-radius: 8px;
   padding: 10px;
   color: white;
   text-decoration: none;
+  transition: 300ms;
 }
 
   .article-btn:hover{
     background-color: white;
-    border-color: black;
-    border-style: solid;
-    border-width: 2px;
     color: black;
     transition: ease-in;
     cursor: pointer;
-    transition: 200ms;
+    transition: 300ms;
   }
 
 
