@@ -18,6 +18,7 @@
           background-image: url("Graphics/PageBG.png");
           background-attachment: fixed;
           padding-top: 20px;
+          z-index: -100;
           
 
         }
@@ -83,6 +84,7 @@
       height: 0px;
       width: 100%;
       position: relative;
+      z-index: 100;
     }
     
     .nav > .nav-header {
