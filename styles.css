@@ -213,7 +213,7 @@
           }
 
           .about {
-              min-height: 220vh;
+              min-height: auto;
           }
 
           .header {
@@ -281,6 +281,11 @@
           font-weight: 550;
           font-stretch: expanded;
         }
+        .explore:hover{
+          color: #c4c4c4;
+          transition: 300ms;
+          cursor: pointer;
+        }
 
         @media (max-width:760px){
           .years{
@@ -326,17 +331,33 @@
     /* Graphics */
         .mic{
           position: absolute;
-          width: 664px;
-          margin-left: 676px;
-          margin-top: 144px;
+          width: 740px;
+          margin-left: 643px;
+          margin-top: 53px;
           display: inline;
-           opacity: 80%;
+          opacity: 80%;
         }
+
+            
+
+            @media (max-width:1315px){
+              .mic{
+                width: 681px;
+                margin-left: 580px;
+              }
+            }
+            @media (max-width:1215px){
+              .mic{
+                width: 681px;
+                margin-left: 513px;
+              }
+            }
 
             @media (max-width:1080px){
               .mic{
                 width: 550px;
-                margin-left: 530px;
+                margin-left: 493px;
+                margin-top: 122px;
               }
             }
 
@@ -376,6 +397,11 @@
           WIDTH: 25px;
           margin-top: 471px;
 
+        }
+        .arrow:hover{
+          color: #969494;
+          transition: 300ms;
+          cursor: pointer;
         }
         
         @media(max-width:760px){
@@ -843,10 +869,12 @@
 /* We Are The... */
 
 .we-are-the{
-  background-image: url(Graphics/eaglebg.png);
+  background-image: url(Graphics/we-are-the-bg.png);
   background-attachment: fixed;
+  object-fit: cover;
   height: 200px;
-  opacity: 80%;
+  opacity: 100%;
+  backdrop-filter: blur(10px);
 }
 
 
@@ -875,6 +903,17 @@
 
       .we-are-the{
         height: 150px;
+      }
+    }
+
+    @media (max-width:820px){
+      .we-are-the-txt{
+        font-size: 30px;
+      }
+
+      .we-are-the{
+        height: 150px;
+        background-image: url(Graphics/we-are-the-bg-mobile.png);
       }
     }
 
