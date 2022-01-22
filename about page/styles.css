@@ -55,6 +55,7 @@ body {
       padding-left: 0.8rem;
       padding-right: 0.8rem;
       transition: 300ms;
+      margin: auto;
     }
 
     .signupbtn:hover {
@@ -93,6 +94,14 @@ body {
     .nav > .nav-btn {
       display: none;
     }
+    @media (max-width: 1024px){
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+      }
+    }
     
     .nav > .nav-links {
       display: inline;
@@ -107,7 +116,8 @@ body {
     
     .nav-link {
       display: inline-block;
-      padding: 13px 10px 13px 10px;
+      text-align: center;
+      padding: 10px 10px 10px 10px;
       text-decoration: none;
       color: #e0e0e0;
     }
@@ -184,7 +194,7 @@ body {
             display: inline-block;
             width: 50px;
             height: 50px;
-            padding: 13px;
+            padding: 10px;
           }
           .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
             background-color: rgba(0, 0, 0, 0.3);
@@ -196,15 +206,17 @@ body {
             border-top: 3px solid #eee;
           }
           .nav > .nav-links {
+            margin-top: 72px;
             position: absolute;
             display: block;
             width: 100%;
-            background-color: #333;
-            height: 0px;
+            height: 20px;
             transition: all 0.3s ease-in;
             overflow-y: hidden;
             top: 50px;
             left: 0px;
+            backdrop-filter: blur(20px);
+            
           }
           .nav-link {
             display: block;
@@ -214,7 +226,7 @@ body {
             height: 0px;
           }
           .nav > #nav-check:checked ~ .nav-links {
-            height: calc(100vh - 50px);
+            height: calc(52vh - 50px);
             overflow-y: auto;
           }
 
