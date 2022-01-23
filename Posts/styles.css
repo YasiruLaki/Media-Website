@@ -4,7 +4,7 @@ body {
   
       .landing-section {
         background-color: rgb(0, 0, 0);
-        min-height: 400vh;
+        min-height: auto;
         width: 100%;
         background-size: cover;
         background-position: center;
@@ -233,4 +233,38 @@ body {
 .embedsocial-hashtag{
     margin-top: 150px;
     color: white;
+}
+
+
+/* FOOTER */
+
+.footer{
+  background-color: rgb(19, 23, 43);
+  height: auto;
+  padding: 10px;
+}
+
+.footer-name{
+  color: white;
+  font-family: poppins;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  margin-top: 0%;
+  margin: 0ch;
+}
+
+.footer-copyright{
+  margin-top: 0%;
+  color: rgb(196, 194, 194);
+  font-family: poppins;
+  text-align: center;
+  font-size: 15px;
+
+}
+
+.footer-social{
+  margin: auto;
+  width: 50%;
+  float: none;
 }
