@@ -330,6 +330,52 @@
           }
         }
 
+        @media (max-width:478px){
+          .years{
+            font-size: 50px;
+            text-align: center;
+            position: relative;
+            margin-left: -7px;
+            margin-top: 200px;
+            margin-bottom: 0%;
+          }
+
+          .of{
+            font-size: 40px;
+            text-align: center;
+            position: relative;
+            margin-left: -7px;
+            margin-bottom: 0%;
+            margin-top: 0%;
+          }
+
+
+          .excellence{
+            font-size: 50px;
+            text-align: center;
+            position: relative;
+            margin-left: -7px;
+            margin-bottom: 0%;
+            margin-top: 0%;
+          }
+
+          .explore{
+            text-align: center;
+            position: relative;
+            margin-left: -7px;
+            margin-bottom: 0%;
+            margin-top: 30px;
+          }
+
+          .explore:hover{
+            color: #c4c4c4;
+            transition: 300ms;
+            cursor: pointer;
+          }
+        }
+
+
+
     /* Graphics */
         .mic{
           position: absolute;
@@ -376,19 +422,41 @@
           z-index: -1;
         }
 
+        @media (max-width:1420px){
+          .bglines{
+            display: none;
+            
+          }
+        }
+
         .divider{
           position: absolute;
-          width: 1420px;
+          
           margin-top: 621px;
           z-index: 0;
+          display: flex;
+          flex: 1,1 auto;
+          flex-direction: row;
+          
         }
 
         @media (max-width:760px){
           .divider{
             position: absolute;
-            width: 800px;
+            width: auto;
             z-index: 0;
-            margin-top: 80px;
+            margin-top: 0px;
+            
+          }
+        }
+
+        @media (max-width:1420px){
+          .divider{
+            display: block;
+            width: auto;
+            width: min-content;
+            
+            
             
           }
         }
@@ -988,6 +1056,26 @@
     @media (max-width: 535px){
       .News-box{
         margin-top: 1460px;
+      }
+    }
+    @media (max-width: 478px){
+      .News-box{
+        margin-top: 1510px;
+      }
+    }
+    @media (max-width: 444px){
+      .News-box{
+        margin-top: 1580px;
+      }
+    }
+    @media (max-width: 416px){
+      .News-box{
+        margin-top: 1630px;
+      }
+    }
+    @media (max-width: 395px){
+      .News-box{
+        margin-top: 1680px;
       }
     }
     
