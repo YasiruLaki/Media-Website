@@ -55,7 +55,7 @@
     .signupbtn{
       display: inline-block; 
       font-size: 22px;
-      font-family: "MADE Tommy Soft";
+      font-family: "poppins";
       word-spacing: 0.5px;
       text-decoration: none;
       color: #fafafa;
@@ -651,7 +651,7 @@
 .block1-btn{
   display: inline;
   font-size: 17px;
-  font-family: MADE Tommy Soft;
+  font-family: poppins;
   inline-size: 111px;
   margin-top: 49px;
   text-decoration: none;
@@ -730,7 +730,7 @@
 .block3-btn{
   display: inline;
   font-size: 17px;
-  font-family: MADE Tommy Soft;
+  font-family: poppins;
   inline-size: 111px;
   margin-top: 49px;
   text-decoration: none;

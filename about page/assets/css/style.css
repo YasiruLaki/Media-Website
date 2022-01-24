@@ -11,7 +11,7 @@ body {
   }
   
       .landing-section {
-        background-image: url("about page/assets/img/PageBG.png");
+        background-image: url("/about page/assets/img/PageBG.png");
         min-height: auto;
         width: 100%;
         background-size: cover;
@@ -53,7 +53,7 @@ body {
   .signupbtn{
     display: inline-block; 
     font-size: 22px;
-    font-family: "MADE Tommy Soft";
+    font-family: "poppins";
     word-spacing: 0.5px;
     text-decoration: none;
     color: #fafafa;
