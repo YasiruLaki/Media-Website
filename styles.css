@@ -26,6 +26,11 @@
           
 
         }
+        @media (max-width: 480px){
+          .landing-section {
+            background-size: auto
+          }
+        }
 
 
         .bgoverlay{
@@ -458,7 +463,7 @@
             position: absolute;
             width: auto;
             z-index: 0;
-            margin-top: 0px;
+            margin-top: -60px;
             
           }
         }
@@ -644,7 +649,7 @@
 }
 
 .about{
-  backdrop-filter: blur(13px);
+  backdrop-filter: blur(4px);
 }
 
 /* END OF ABOUT */ /* END OF ABOUT */ /* END OF ABOUT */
@@ -1038,6 +1043,7 @@
       .we-are-the{
         height: 150px;
         background-image: url(Graphics/we-are-the-bg-mobile.png);
+        background-attachment: fixed;
       }
     }
 
@@ -1154,6 +1160,14 @@
   margin: auto;
   margin-bottom: 10px;
   padding: 25px;
+}
+
+@media (max-width: 480px){
+  .article-box{
+    margin: 0%,auto;
+    width: 85%;
+    
+  }
 }
 
 .article-category{
@@ -1590,6 +1604,7 @@ textarea.input {
 
   .contact-info:before {
     display: none;
+    
   }
 
   .square,
@@ -1600,6 +1615,7 @@ textarea.input {
   form,
   .contact-info {
     padding: 1.7rem 1.6rem;
+    margin-top: 80px;
   }
 
   .text,
