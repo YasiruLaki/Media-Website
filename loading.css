@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+/* Loading Screen */
+
+.progress {
+        background: rgba(255, 255, 255, 0.24);
+        border-radius: 100px;
+        padding: 0 5px;
+        height: 5px;
+        width: 100%;
+        
+
+        
+      }
+      
+      .progress-value {
+        animation: load 2.5s normal forwards;
+        border-radius: 100px;
+        background: #fff;
+        height: 5px;
+
+      }
+      
+      @keyframes load {
+        0% { width: 0; }
+        100% { width: 100%; }
+      }
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.952);
+  z-index: 9999;
+}
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.loading-text span {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 20px;
+}
+
+.loading-text span:nth-child(1) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0+s infinite linear alternate;
+          animation: blur-text 1.5s 0+s infinite linear alternate;
+}
+
+.loading-text span:nth-child(2) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.2+s infinite linear alternate;
+          animation: blur-text 1.5s 0.2+s infinite linear alternate;
+}
+
+.loading-text span:nth-child(3) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.4+s infinite linear alternate;
+          animation: blur-text 1.5s 0.4+s infinite linear alternate;
+}
+
+.loading-text span:nth-child(4) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.6+s infinite linear alternate;
+          animation: blur-text 1.5s 0.6+s infinite linear alternate;
+}
+
+.loading-text span:nth-child(5) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 0.8+s infinite linear alternate;
+          animation: blur-text 1.5s 0.8+s infinite linear alternate;
+}
+
+.loading-text span:nth-child(6) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1+s infinite linear alternate;
+          animation: blur-text 1.5s 1+s infinite linear alternate;
+}
+
+.loading-text span:nth-child(7) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1.5s 1.2+s infinite linear alternate;
+          animation: blur-text 1.5s 1.2+s infinite linear alternate;
+}
+
+@-webkit-keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+}
+/*# sourceMappingURL=loading.css.map */

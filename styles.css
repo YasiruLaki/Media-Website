@@ -5,7 +5,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
-
+    
     *{
       font-family: poppins;
     }
@@ -646,7 +646,7 @@
   color: white;
   font-size: 50px;
   font-weight: normal;
-  margin-top: 1214px;
+  margin-top: 1100px;
   text-align: center;
   padding-top: 20px;
   z-index: 100;
