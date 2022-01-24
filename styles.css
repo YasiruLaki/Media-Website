@@ -533,12 +533,13 @@
     }
 
     @media (max-width:760px){
-      .social-icons{
+      .social-icons-top{
         margin-top: 38px;
         display: none;
       }
     }
-    
+
+
     
         .fblogo{
           position: absolute;
