@@ -26,11 +26,6 @@
           
 
         }
-        @media (max-width: 480px){
-          .landing-section {
-            background-size: auto
-          }
-        }
 
 
         .bgoverlay{
@@ -649,7 +644,7 @@
 }
 
 .about{
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(13px);
 }
 
 /* END OF ABOUT */ /* END OF ABOUT */ /* END OF ABOUT */
@@ -1043,8 +1038,6 @@
       .we-are-the{
         height: 150px;
         background-image: url(Graphics/we-are-the-bg-mobile.png);
-        background-attachment: fixed;
-
       }
     }
 
@@ -1055,7 +1048,7 @@
       }
 
       .we-are-the{
-        height: 20px;
+        height: 210px;
       }
     }
 
@@ -1138,9 +1131,20 @@
     }
     @media (max-width: 395px){
       .News-box{
-        margin-top: 1680px;
+        margin-top: 1730px;
       }
     }
+    @media (max-width: 370px){
+      .News-box{
+        margin-top: 1800px;
+      }
+    }
+  
+  @media (max-width: 367px){
+    .News-box{
+      margin-top: 1880px;
+    }
+  }
     
 .heading{
   color: rgb(255, 255, 255);
