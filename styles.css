@@ -297,6 +297,13 @@
         }
 
         @media (max-width:760px){
+        .explore-now{
+          text-align: center;
+          margin-top: 50px;
+        }
+      }
+
+        @media (max-width:760px){
           .years{
             text-align: center;
             position: relative;
@@ -525,6 +532,12 @@
       transform: scale(1.05);
     }
 
+    @media (max-width:760px){
+      .social-icons{
+        margin-top: 38px;
+        display: none;
+      }
+    }
     
     
         .fblogo{
