@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*{
+    font-family: poppins;
+}
+
+
 body {
     overflow-x: hidden;
   }
@@ -8,7 +17,7 @@ body {
         width: 100%;
         background-size: cover;
         background-position: center;
-        background-image: url("Graphics/PageBG.png");
+        background-image: url("Posts/Graphics/PageBG.png");
         background-attachment: fixed;
         padding-top: 20px;
         
