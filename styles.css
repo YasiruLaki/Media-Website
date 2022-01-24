@@ -561,9 +561,10 @@
   color: white;
   font-size: 50px;
   font-weight: normal;
-  margin-top: 1114px;
+  margin-top: 1214px;
   text-align: center;
   padding-top: 20px;
+  z-index: 100;
 }
 
 @media (max-width:760px){
