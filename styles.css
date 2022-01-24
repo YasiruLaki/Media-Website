@@ -287,6 +287,8 @@
           margin-top: 470px;
           font-weight: 550;
           font-stretch: expanded;
+          text-align: center;
+          text-decoration: none;
         }
         .explore:hover{
           color: #c4c4c4;
@@ -302,7 +304,6 @@
             margin-top: 200px;
             margin-bottom: 0%;
           }
-
           .of{
             text-align: center;
             position: relative;
@@ -491,6 +492,41 @@
         }
 
     /* Social Icons */
+    .social-media {
+      padding: 6px;
+    }
+    
+    .social-media p {
+      color: rgb(180, 180, 180);
+    }
+    
+    .social-icons-top{
+      display: flex;
+      margin-top: 600px;
+      position: absolute;
+      margin-left: 65px;
+    }
+    
+    .social-icons-bg {
+      width: 40px;
+      height: 35px;
+      border-radius: 5px;
+      background: linear-gradient(45deg, #451abc, #5e41c4);
+      color: #fff;
+      text-align: center;
+      line-height: 35px;
+      margin-right: 0.5rem;
+      transition: 0.3s;
+      padding-right: 6px;
+      padding-left: 5px;
+    }
+    
+    .social-icons a:hover {
+      transform: scale(1.05);
+    }
+
+    
+    
         .fblogo{
           position: absolute;
           width: 25px;
@@ -1427,7 +1463,7 @@ textarea.input {
   margin-top: 0.5rem;
 }
 
-.social-icons a {
+.social-icons-bg {
   width: 35px;
   height: 35px;
   border-radius: 5px;
