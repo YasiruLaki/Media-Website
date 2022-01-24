@@ -15,7 +15,7 @@ body {
         width: 100%;
         background-size: cover;
         background-position: center;
-        background-image: url("Graphics/PageBG.png");
+        background-image: url("Contact/graphics/PageBG.png");
         background-attachment: fixed;
         padding-top: 20px;
         z-index: -100;

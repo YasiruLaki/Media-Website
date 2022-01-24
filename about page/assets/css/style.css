@@ -1,11 +1,14 @@
 @import "https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 body {
     overflow-x: hidden;
   }
   
       .landing-section {
-        background-image: url("/about page/assets/img/PageBG.png");
+        background-image: url("about page/assets/img/PageBG.png");
         min-height: auto;
         width: 100%;
         background-size: cover;
@@ -231,6 +234,7 @@ body {
             display: block;
             float: none;
             width: 111px !important;
+            font-family: poppins;
         }
       }
 
