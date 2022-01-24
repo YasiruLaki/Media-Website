@@ -7,10 +7,35 @@
     document.getElementsByTagName("html")[0].className += " js";
     </script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="loading.css">
     <title>About</title>
 </head>
 
 <body>
+
+    <div class="loading">
+        <div class="progress">
+        <div class="progress-value"></div>
+        </div>
+            <div class="loading-text">
+            <span class="loading-text-words" id="text1">L</span>
+            <span class="loading-text-words" id="text2">O</span>
+            <span class="loading-text-words" id="text3">A</span>
+            <span class="loading-text-words" id="text4">D</span>
+            <span class="loading-text-words" id="text5">I</span>
+            <span class="loading-text-words" id="text6">N</span>
+            <span class="loading-text-words" id="text7">G</span>
+            </div>
+    </div>
+
+  <script>
+    setTimeout(function(){
+        $('.loading').fadeToggle();
+    },2500);
+  </script>
+
+
+
   <div class="landing-section bg-overlay"> 
   <div class="about">
     <header>
