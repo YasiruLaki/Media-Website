@@ -414,14 +414,39 @@
               }
             }
 
-            @media (max-width:1080px){
+            @media (max-width:1199px){
               .mic{
-                width: 550px;
-                margin-left: 493px;
+                width: 50%;
+                margin-left: 513px;
                 margin-top: 122px;
+                height: auto;
               }
             }
 
+            @media (max-width:1026px){
+              .mic{
+                width: 40%;
+                margin-left: 513px;
+                margin-top: 182px;
+                height: auto;
+              }
+            }
+            @media (max-width:856px){
+              .mic{
+                width: 35%;
+                margin-left: 513px;
+                margin-top: 202px;
+                height: auto;
+              }
+            }
+            @media (max-width:790px){
+              .mic{
+                width: 30%;
+                margin-left: 513px;
+                margin-top: 218px;
+                height: auto;
+              }
+            }
             @media (max-width:760px){
               .mic{
                 display: none;
@@ -450,26 +475,16 @@
           display: flex;
           flex: 1,1 auto;
           flex-direction: row;
+          width: 100%;
+          height: auto;
           
         }
 
         @media (max-width:760px){
           .divider{
             position: absolute;
-            width: auto;
             z-index: 0;
-            margin-top: -60px;
-            
-          }
-        }
-
-        @media (max-width:1420px){
-          .divider{
-            display: block;
-            width: auto;
-            width: min-content;
-            
-            
+            margin-top: 20px;
             
           }
         }
@@ -616,13 +631,20 @@
   padding-top: 20px;
   z-index: 100;
 }
-
-@media (max-width:760px){
+@media (max-width:1300px){
   .aboutmaintext{
-   margin-top: 378px;
+   margin-top: 996px;
     
   }
 }
+
+@media (max-width:760px){
+  .aboutmaintext{
+   margin-top: 196px;
+    
+  }
+}
+
 
 .about-paragraph{
   font-family: poppins;
