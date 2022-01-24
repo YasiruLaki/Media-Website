@@ -50,6 +50,22 @@
       width: 125px;
       margin-left: 26px;
       margin-top: 11px;
+      animation: movedown 0.7s linear 1;
+      animation-delay: 0.7s;
+      visibility: hidden;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes movedown{
+      0%{
+        transform: translateY(-100px);
+        visibility: visible;
+      }
+
+      100%{
+        transform: translateY(0px);
+        visibility: visible;
+      }
     }
 
     .signupbtn{
@@ -124,6 +140,10 @@
       inline-size: 807px;
       margin-top: 43px;
       margin-right: 1.9rem;
+      animation: movedown 0.7s linear 1;
+      animation-delay: 1.6s;
+      visibility: hidden;
+      animation-fill-mode: forwards;
     }
     
     .nav-link {
