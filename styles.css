@@ -1044,6 +1044,7 @@
         height: 150px;
         background-image: url(Graphics/we-are-the-bg-mobile.png);
         background-attachment: fixed;
+
       }
     }
 
@@ -1054,7 +1055,7 @@
       }
 
       .we-are-the{
-        height: 210px;
+        height: 20px;
       }
     }
 
