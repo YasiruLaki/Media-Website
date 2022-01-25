@@ -367,7 +367,7 @@ body {
     top: -30px;
   }
   .timeline ul li:hover::before {
-    background-color: rgb(93, 3, 177);
+    background-color: rgb(133, 9, 250);
   }
 }
 
@@ -432,7 +432,7 @@ body{
 
 .article-box{
   backdrop-filter: blur(10px);
-  background-color: #b4d3f065;
+  background-color: #cfe6fc4f;
   border-radius: 10px;
   overflow: hidden;
   width: 60%;
@@ -451,7 +451,7 @@ body{
 .article-category{
   text-transform: uppercase;
   font-weight: bolder;
-  color: blue;
+  color: #b965fd;
   font-size: 17px;
   padding-bottom: 0%;
 }
@@ -479,7 +479,7 @@ body{
 }
 
 .article-btn{
-  background-color: blue;
+  background-color: #9d26ff;
   border-radius: 8px;
   padding: 10px;
   color: white;
