@@ -3821,7 +3821,7 @@ body {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #4c00ff;
+    background-color: #8c00ff;
     -webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);
     transform: scaleX(0);
@@ -3868,8 +3868,8 @@ body {
 }
 
 .js .cd-h-timeline__date:hover::after {
-    background-color: #6f15ff;
-    border-color: #6200ff;
+    background-color: #8300ee;
+    border-color: #8902f7;
     border-color:var(--cd-color-2)
 }
 
@@ -3885,8 +3885,8 @@ body {
 }
 
 .js .cd-h-timeline__date--selected::after {
-    background-color: #4400ff;
-    border-color: #3700ff;
+    background-color: #8c00ff;
+    border-color: #8902f7;
     border-color:var(--cd-color-2)
 }
 
