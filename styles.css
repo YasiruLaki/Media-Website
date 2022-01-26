@@ -16,7 +16,6 @@ body {
     
 .landing-section {
   background-color: rgb(0, 0, 0);
-  min-height: 400vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -1085,87 +1084,8 @@ body {
 
 .News-box{
   max-width: 2xl;
-  margin-top: 37rem;
+
 }
-
-    @media (max-width: 1227px){
-      .News-box{
-        margin-top: 620px;
-      }
-    }
-
-    @media (max-width: 1160px){
-      .News-box{
-        margin-top: 940px;
-      }
-    }
-
-    @media (max-width: 1030px){
-      .News-box{
-        margin-top: 980px;
-      }
-    }
-
-    @media (max-width: 880px){
-      .News-box{
-        margin-top: 1020px;
-      }
-    }
-
-    @media (max-width: 812px){
-      .News-box{
-        margin-top: 1120px;
-      }
-    }
-
-    @media (max-width: 780px){
-      .News-box{
-        margin-top: 1300px;
-      }
-    }
-
-    @media (max-width: 585px){
-      .News-box{
-        margin-top: 1400px;
-      }
-    }
-
-    @media (max-width: 535px){
-      .News-box{
-        margin-top: 1460px;
-      }
-    }
-    @media (max-width: 478px){
-      .News-box{
-        margin-top: 1510px;
-      }
-    }
-    @media (max-width: 444px){
-      .News-box{
-        margin-top: 1580px;
-      }
-    }
-    @media (max-width: 416px){
-      .News-box{
-        margin-top: 1630px;
-      }
-    }
-    @media (max-width: 395px){
-      .News-box{
-        margin-top: 1730px;
-      }
-    }
-    @media (max-width: 370px){
-      .News-box{
-        margin-top: 1800px;
-      }
-    }
-  
-  @media (max-width: 367px){
-    .News-box{
-      margin-top: 1880px;
-    }
-  }
     
 .heading{
   color: rgb(255, 255, 255);
