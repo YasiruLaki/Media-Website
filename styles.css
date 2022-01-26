@@ -1,111 +1,110 @@
 /* START OF LANDING PAGE */ /* START OF LANDING PAGE */ /* START OF LANDING PAGE */
 
-    /* Background */
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+/* Background */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
     
-    *{
-      font-family: poppins;
-    }
-    body {
-      overflow-x: hidden;
-    }
+*{
+  font-family: poppins;
+}
+
+body {
+  overflow-x: hidden;
+}
     
-        .landing-section {
-          background-color: rgb(0, 0, 0);
-          min-height: 400vh;
-          width: 100%;
-          background-size: cover;
-          background-position: center;
-          background-image: url("Graphics/PageBG.png");
-          background-attachment: fixed;
-          padding-top: 20px;
-          z-index: -100;
-          
+.landing-section {
+  background-color: rgb(0, 0, 0);
+  min-height: 400vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("Graphics/PageBG.png");
+  background-attachment: fixed;
+  padding-top: 20px;
+  z-index: -100;       
+}
 
-        }
+.bgoverlay{
+  width: 1420px;
+  position: absolute;
+  z-index: -3;
+}       
+
+.bg{
+  width: 1420px;
+  height: 957px;
+  background-color: #051946;
+  opacity: 77%;
+  margin-top: -100px;
+  position: absolute;
+  z-index: -2;
+}
 
 
-        .bgoverlay{
-          width: 1420px;
-          position: absolute;
-          z-index: -3;
-        }       
+/* Nav Bar */
 
-        .bg{
-          width: 1420px;
-          height: 957px;
-          background-color: #051946;
-          opacity: 77%;
-          margin-top: -100px;
-          position: absolute;
-          z-index: -2;
-        }
+.toplogo{
+  position: absolute;
+  width: 125px;
+  margin-left: 26px;
+  margin-top: 11px;
+}
 
-    /* Nav Bar */
-    .toplogo{
-      position: absolute;
-      width: 125px;
-      margin-left: 26px;
-      margin-top: 11px;
-    }
+.signupbtn{
+  display: inline-block; 
+  font-size: 22px;
+  font-family: "poppins";
+  word-spacing: 0.5px;
+  text-decoration: none;
+  color: #fafafa;
+  background-color: #8c00ff;
+  border-radius: 10px;
+  margin-right: 4rem;
+  padding: 5px;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  transition: 300ms;
+  margin: auto;
+}
 
-    .signupbtn{
-      display: inline-block; 
-      font-size: 22px;
-      font-family: "poppins";
-      word-spacing: 0.5px;
-      text-decoration: none;
-      color: #fafafa;
-      background-color: #8c00ff;
-      border-radius: 10px;
-      margin-right: 4rem;
-      padding: 5px;
-      padding-left: 0.8rem;
-      padding-right: 0.8rem;
-      transition: 300ms;
-      margin: auto;
-    }
-
-    .signupbtn:hover {
-      background-color: white;
-      color: #06205f;
-      transition: 300ms;
-    }
+.signupbtn:hover {
+  background-color: white;
+  color: #06205f;
+  transition: 300ms;
+}
     
-  * {
-      box-sizing: border-box;
-    }
+* {
+  box-sizing: border-box;
+}
     
-    body {
-      margin: 0px;
-      font-family: 'segoe ui';
-    }
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
     
-    .nav {
-      height: 0px;
-      width: 100%;
-      position: relative;
-      z-index: 100;
-    }
+.nav {
+  height: 0px;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
     
-    .nav > .nav-header {
-      display: inline;
-    }
+.nav > .nav-header {
+  display: inline;
+}
     
-    .nav > .nav-header > .nav-title {
-      display: inline-block;
-      font-size: 72px;
-      color: rgb(255, 255, 255);
-      padding: 10px 10px 10px 10px;
-
-    }
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 72px;
+  color: rgb(255, 255, 255);
+  padding: 10px 10px 10px 10px;
+}
     
-    .nav > .nav-btn {
-      display: none;
-    }
+.nav > .nav-btn {
+  display: none;
+}
     @media (max-width: 1024px){
       .nav > .nav-btn > label {
         display: inline-block;
@@ -115,56 +114,55 @@
       }
     }
     
-    .nav > .nav-links {
-      display: inline;
-      float: right;
-      word-spacing: 13px;
-      font-size: 22px;
-      font-family: MADE Tommy Soft;
-      inline-size: 807px;
-      margin-top: 43px;
-      margin-right: 1.9rem;
-    }
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  word-spacing: 13px;
+  font-size: 22px;
+  font-family: MADE Tommy Soft;
+  inline-size: 807px;
+  margin-top: 43px;
+  margin-right: 1.9rem;
+}
     
-    .nav-link {
-      display: inline-block;
-      text-align: center;
-      padding: 10px 10px 10px 10px;
-      text-decoration: none;
-      color: #e0e0e0;
-    }
+.nav-link {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  color: #e0e0e0;
+}
     
-    .nav-link:hover {
-      color: rgb(255, 255, 255);
-    }
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+}
     
-    .nav > #nav-check {
-      display: none;
-    }
+.nav > #nav-check {
+  display: none;}
 
     /* Hover Animation */
 
-    .hover-underline-animation {
-      display: inline-block;
-      position: relative;
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
     }
     
-    .hover-underline-animation:after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: white;
-      transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
     }
     
-    .hover-underline-animation:hover:after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
     }
 
       
@@ -245,55 +243,57 @@
 
 
     /* MAIN TEXT */
-        .years{
-          font-family: Montserrat;
-          display:inline-flexbox;
-          position: absolute;
-          color: white;
-          font-size: 63px;
-          margin-left: 65px;
-          margin-top: 247px;
-          font-weight: 900;
-          font-stretch: expanded;
+        
+.years{
+  font-family: Montserrat;
+  display:inline-flexbox;
+  position: absolute;
+  color: white;
+  font-size: 63px;
+  margin-left: 65px;
+  margin-top: 247px;
+  font-weight: 900;
+  font-stretch: expanded;
         }
 
-        .of{
-          font-family: Montserrat;
-          position: absolute;
-          color: white;
-          font-size: 40px;
-          margin-left: 65px;
-          margin-top: 317px;
-          font-weight: 500;
-          font-stretch: expanded;
+.of{
+  font-family: Montserrat;
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  margin-left: 65px;
+  margin-top: 317px;
+  font-weight: 500;
+  font-stretch: expanded;
         }
 
-        .excellence{
-          font-family: Montserrat;
-          position: absolute;
-          color: white;
-          font-size: 63px;
-          margin-left: 65px;
-          margin-top: 363px;
-          font-weight: 900;
-          font-stretch: expanded;
+.excellence{
+  font-family: Montserrat;
+  position: absolute;
+  color: white;
+  font-size: 63px;
+  margin-left: 65px;
+  margin-top: 363px;
+  font-weight: 900;
+  font-stretch: expanded;
         }
-        .explore{
-          font-family: Montserrat;
-          position: absolute;
-          color: white;
-          font-size: 23px;
-          margin-left: 65px;
-          margin-top: 470px;
-          font-weight: 550;
-          font-stretch: expanded;
-          text-align: center;
-          text-decoration: none;
+.explore{
+  font-family: Montserrat;
+  position: absolute;
+  color: white;
+  font-size: 23px;
+  margin-left: 65px;
+  margin-top: 470px;
+  font-weight: 550;
+  font-stretch: expanded;
+  text-align: center;
+  text-decoration: none;
         }
-        .explore:hover{
-          color: #c4c4c4;
-          transition: 300ms;
-          cursor: pointer;
+
+.explore:hover{
+  color: #c4c4c4;
+  transition: 300ms;
+  cursor: pointer;
         }
 
         @media (max-width:760px){
@@ -390,13 +390,13 @@
 
 
     /* Graphics */
-        .mic{
-          position: absolute;
-          width: 740px;
-          margin-left: 643px;
-          margin-top: 53px;
-          display: inline;
-          opacity: 80%;
+  .mic{
+  position: absolute;
+  width: 740px;
+  margin-left: 643px;
+  margin-top: 53px;
+  display: inline;
+  opacity: 80%;
         }
 
             
@@ -454,10 +454,10 @@
             }
 
 
-        .bglines{
-          position: absolute;
-          width: 1417px;
-          z-index: -1;
+.bglines{
+  position: absolute;
+  width: 1417px;
+  z-index: -1;
         }
 
         @media (max-width:1420px){
@@ -467,16 +467,15 @@
           }
         }
 
-        .divider{
-          position: absolute;
-          
-          margin-top: 621px;
-          z-index: 0;
-          display: flex;
-          flex: 1,1 auto;
-          flex-direction: row;
-          width: 100%;
-          height: auto;
+.divider{
+  position: absolute;     
+  margin-top: 621px;
+  z-index: 0;
+  display: flex;
+  flex: 1,1 auto;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
           
         }
 
@@ -489,11 +488,11 @@
           }
         }
 
-        .arrow{
-          position: absolute;
-          MARGIN-LEFT: 260px;
-          WIDTH: 25px;
-          margin-top: 471px;
+.arrow{
+  position: absolute;
+  MARGIN-LEFT: 260px;
+  WIDTH: 25px;
+  margin-top: 471px;
 
         }
         .arrow:hover{
