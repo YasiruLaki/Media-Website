@@ -84,7 +84,7 @@
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password"  id="lpassword"/>
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <input type="submit" value="Login" class="btn solid" onclick="signIn()"/>
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -105,17 +105,21 @@
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" id="fname"/>
+              <input type="text" placeholder="Username" id="username"/>
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" id="eemail"/>
+              <input type="email" placeholder="Email" id="email"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" id="lpassword"/>
+              <input type="password" placeholder="Password" id="password"/>
             </div>
-            <input type="submit" class="btn" value="Sign up" />
+            <div class="input-field">
+              <i class="fas fa-school"></i>
+              <input type="text" placeholder="School" id="school"/>
+            </div>
+            <input type="submit" class="btn" value="Sign up" onclick="signUp()" />
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
