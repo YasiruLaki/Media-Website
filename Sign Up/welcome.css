@@ -14,7 +14,7 @@ input {
 
 .landing-section {
   background-image: url("/Sign Up/graphics/PageBG.png");
-  height: auto;
+  height: max-content;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -240,172 +240,73 @@ body {
    }
 
 
-.card{
-  margin: 0,auto;
-  font-family: poppins;
-  color: white;
-  text-align: center;
-  margin-top: 200px;
-  box-sizing: border-box;
-}
+   .message{
+       color: white;
+       font-size: 45px;
+       font-family: poppins;
+       text-align: center;
+   }
 
-.card-header{
-  font-size: 40px;
-  font-weight: 400;
-}
+   .success{
+       color: white;
+       font-size: 20px;
+       margin-top: 40px;
+       text-align: center;
+   }
 
-*, *::before, *::after{
-  box-sizing: border-box;
-}
+   .btn{
+    display: inline-block; 
+    font-size: 22px;
+    font-family: "poppins";
+    word-spacing: 0.5px;
+    text-decoration: none;
+    color: #fafafa;
+    background-color: #8c00ff;
+    border-radius: 10px;
+    margin-right: 4rem;
+    padding: 5px;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    transition: 300ms;
+    margin: auto;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: #06205f;
+    transition: 300ms;
+  }
 
-.custom-field{
-  position: relative;
-  font-size: 14px;
-  padding-top: 20px;
-  margin-top: 5px;
-}
-
-.custom-field input{
-  padding: 8px;
-  width: 300px;
-  font-size: 14px;
-  border-radius: 3px;
-  border: 1.5px solid rgb(255, 255, 255);
-  outline-color: deepskyblue;
-  background-color: transparent;
-  backdrop-filter: blur(10px) ;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.custom-field .placeholder{
-  position: absolute;
-  left: 12px;
-  top: calc(50% + 10px);
-  transform: translateY(-50%);
-  color: rgb(255, 255, 255);
-  transition: top 0.1s ease, font-size 0.1s ease, color 0.1s ease, opacity 0.15s ease;
-}
-
-.custom-field input:valid + .placeholder,
-.custom-field input:focus + .placeholder{
-  opacity: 0%;
-}
-
-.message{
-  font-size: 70px;
-  font-family: 'Ubuntu', sans-serif;
-  color: steelblue;
-}
-
-.success{
-  font-size: 18px;
-  margin-top: 15px;
-  color: seagreen;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.forgot{
-  text-decoration: none;
-  color: white;
-  margin: 0%;
-  opacity: 90%;
-  font-size: 15px;
-}
-
-.login-btn{
-  background-color: #8c00ff;
-  color: white;
-  border-style: none;
-  padding: 6px;
-  font-size: 18px;
-  border-radius: 8px;
-  width: 100px;
-  cursor: pointer;
-  margin-right: 8px;
-  margin-top: 20px ;
-}
-
-.login-btn:hover{
-  background-color: #7004c9;
-  transition: 300ms ease;
-}
-
-.sign-btn{
-  background-color: #3700ce;
-  color: white;
-  border-style: none;
-  padding: 6px;
-  font-size: 18px;
-  border-radius: 8px;
-  width: 100px;
-  cursor: pointer;
-}
-.sign-btn:hover{
-  background-color: #3104ac;
-  transition: 300ms ease;
-}
-
-.methods{
-  margin-top: 20px;
-}
-
-.g-signin{
-  width: 200px;
-  margin-top: 10px;
-  transform: scale(100%);
-}
-.g-signin:hover{
-  opacity: 90%;
-  cursor: pointer;
-  transform: scale(95%);
-  transition: 300ms;
-}
-.fb-signin{
-  width: 200px;
-  margin-top: 5px;
-  margin-bottom: 100px;
-  transform: scale(100%);
-}
-
-.fb-signin:hover{
-  opacity: 90%;
-  cursor: pointer;
-  transform: scale(95%);
-  transition: 300ms;
-}
-
-
-/* FOOTER */
+  /* FOOTER */
 
 .footer{
-  background-color: rgb(19, 23, 43);
-  height: auto;
-  padding: 10px;
-}
-
-.footer-name{
-  color: white;
-  font-family: poppins;
-  text-align: center;
-  font-size: 20px;
-  position: relative;
-  margin-top: 0%;
-  margin: 0ch;
-}
-
-.footer-copyright{
-  margin-top: 0%;
-  color: rgb(196, 194, 194);
-  font-family: poppins;
-  text-align: center;
-  font-size: 15px;
-
-}
-
-.footer-social{
-  margin: auto;
-  width: 50%;
-  float: none;
-}
+    background-color: rgb(19, 23, 43);
+    height: auto;
+    padding: 10px;
+  }
+  
+  .footer-name{
+    color: white;
+    font-family: poppins;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    margin-top: 0%;
+    margin: 0ch;
+  }
+  
+  .footer-copyright{
+    margin-top: 0%;
+    color: rgb(196, 194, 194);
+    font-family: poppins;
+    text-align: center;
+    font-size: 15px;
+  
+  }
+  
+  .footer-social{
+    margin: auto;
+    width: 50%;
+    float: none;
+  }
 

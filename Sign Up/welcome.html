@@ -7,10 +7,10 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="welcome.css" />
     <link rel="stylesheet" href="loading.css">
     <link rel="icon" href="/Sign Up/graphics/RCMU Logo .png">
-    <title>Sign Up</title>
+    <title>Welcome User</title>
   </head>
   <body>
 
@@ -70,65 +70,34 @@
           </header>
 
 
-<body>
-          <div class="card">
-            <div class="card-header">
-                <center><h3>Login Or Sign Up</h3></center>
-            </div>
-            <form onsubmit="login()" id="loginForm" class="card-body px-5 py-4">
-                <center><small><span id="error" style="color: red"></span></small></center>
-                <center><label class="custom-field">
-                    <input id="email" type="text" class="input" required />
-                    <span class="placeholder">Email Id</span>
-                </label><br />
-                <label class="custom-field">
-                    <input id="password" type="password" class="input" required />
-                    <span class="placeholder">Password</span>
-                </label></center>
-                <a href="#" onclick="forgotPass()" class="forgot">Forgot Password?</a>
-                <center><button type="submit" class="login-btn">Login</button>
-                <button onclick="signUp()" class="sign-btn">Sign Up</button>
-                </center>
-                <div class="methods">Or Sign in With</div>
-                <a href="">
-                <img src="/Sign Up/graphics/google-signin.png" class="g-signin"><br>
-                </a>
-
-                <a href="">
-                <img src="/Sign Up/graphics/fb-signin.png" class="fb-signin">
-                </a>
-            </form>
-        </div>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
-
-        <!-- TODO: Add SDKs for Firebase products that you want to use
-            https://firebase.google.com/docs/web/setup#available-libraries -->
-        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
-
-        <script src="firebase.js"></script>
-        <script src="index.js"></script>
-
-    </div>
-  
+          <body>
+            <center><div style="margin:160px">
+                <span id="user" class="message">Hello, < email-id ></Email-id></span>
+                <div class="success"><span>Welcome to auth Richmond College Media Unit, You are successfully logged in!!!</span></div><br/>
+                <button class="btn btn-danger" onclick="logout()">Logout</button>
+            </div></center>
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+        
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+                https://firebase.google.com/docs/web/setup#available-libraries -->
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="firebase.js"></script>
-<script src="index.js"></script>
-<script src="welcome.js"></script>
 
- <!-- FOOTER -->
+
+    <!-- FOOTER -->
 
  <div class="footer">
-  <p class="footer-name">Richmond College Media Unit</p>
-  <p class="footer-copyright">©RCMU2022 | On Behalf Of Richmond College Galle</p>
-  
-</div>
+    <p class="footer-name">Richmond College Media Unit</p>
+    <p class="footer-copyright">©RCMU2022 | On Behalf Of Richmond College Galle</p>
+    
+  </div>
+                
+                
+  <script src="firebase.js"></script>
+  <script src="index.js"></script>
+  <script src="welcome.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-
-  </body>
-
-
+</body>
 </html>
