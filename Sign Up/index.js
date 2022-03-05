@@ -6,7 +6,12 @@ document.getElementById("loginForm").addEventListener("submit",(event)=>{
   firebase.auth().onAuthStateChanged((user)=>{
     if(user){
       var email = user.email;
+      window.onload = function() {
+        // similar behavior as an HTTP redirect
+      window.location.replace("http://www.rcmu.lk/Sign%20Up/welcome");
+    }
       alert("Active user " +email);
+      
 
     }else{
       alert("No Active user Found")

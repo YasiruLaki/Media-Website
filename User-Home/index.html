@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="loading.css.map">
+    <link rel="icon" href="/Graphics/RCMU Logo .png">
+
+    <title>Richmond College Media Unit</title>
+</head>
+<body>
+
+
+    <!-- Loading -->
+
+    <div class="loading">
+      <div class="progress">
+        <div class="progress-value">
+        </div>
+    </div>
+
+    <div class="loading-text">
+      <span class="loading-text-words" id="text1">L</span>
+      <span class="loading-text-words" id="text2">O</span>
+      <span class="loading-text-words" id="text3">A</span>
+      <span class="loading-text-words" id="text4">D</span>
+      <span class="loading-text-words" id="text5">I</span>
+      <span class="loading-text-words" id="text6">N</span>
+      <span class="loading-text-words" id="text7">G</span>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(function(){
+        $('.loading').fadeToggle();
+    },2500);
+  </script>
+
+
+    <!-- Header -->
+    
+    <div class="landing-section bg-overlay">
+
+        <header>
+            
+            <div class="nav">
+                <input type="checkbox" id="nav-check">
+                  <div class="nav-header">
+                    <div class="nav-title">
+                      <img src="Graphics/RCMU Logo copy.png" class="toplogo">
+                    </div>
+                  </div>
+
+                  <div class="nav-btn">
+                    <label for="nav-check">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </label>
+            </div>
+
+          <!-- Nav Bar -->     
+          <div class="nav-links">
+            <a href="http://www.rcmu.lk" class="nav-link hover-underline-animation">Home</a>
+            <a href="http://www.rcmu.lk/about%20page/" class="nav-link hover-underline-animation" target="_blank">About</a>
+            <a href="http://www.rcmu.lk/Media-Achievements/" class="nav-link hover-underline-animation" target="_blank">Achievements</a>
+            <a href="http://www.rcmu.lk/Posts/" class="nav-link hover-underline-animation" target="_blank">Posts</a>
+            <a href="http://www.rcmu.lk/Contact/" class="nav-link hover-underline-animation" target="_blank">Contact</a>
+            <div class="dropdown" >
+              <button id="dropdown" class="dropbtn"> <img id="profile-pic" class="profile-img" src="Graphics/3135715.png" alt="profile_pic">
+              </button>
+              <div class="dropdown-content">
+                <a href="#"><svg class="dropdown-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                  <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+                </svg>Dashboard</a>
+                <a href="#"><svg class="dropdown-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                  <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                </svg>LogOut</a>
+              </div>
+            </div>
+          </div>
+       </header>
+
+
+        
+   <!-- Landing page -->     
+
+          <!-- MAIN TEXT -->
+          <div class="maintext">
+             <h1 class="years">20 YEARS</h1>
+             <h1 class="of">OF</h1>
+             <h1 class="excellence">EXCELLENCE!</h1>
+            <div class="explore-now">
+             <a href="http://www.rcmu.lk/about%20page/" class="explore" target="_blank">EXPLORE NOW</a>
+             <img  src="Graphics/Arrow Icon.png" class="arrow">
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="social-icons-top">
+            <a href="https://www.facebook.com/rumuonline" class="social-icons-bg">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/rcmu_official/" class="social-icons-bg">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/+94766181975" class="social-icons-bg">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+          <!-- GRAPHICS -->
+            <div>
+             <img src="Graphics/bg-new.png" class="mic">
+             <img src="Graphics/landing page bg lines.png" class="bglines">
+             <img src="Graphics/Divider wave.png" class="divider">
+            </div>
+
+
+  
+   <!-- About US-->  
+
+            <div class="about">
+              
+              <h5 class="aboutmaintext">We Explore The Truth!</h5>
+              <p class="about-paragraph">The Richmond College Media Unit, plays a remarkable role in almost all the functions in the college. Though it is still at a tender age, being born in the year of 2001, the victories it has obtained and the services it has rendered are remarkable. It could procreate the Only Presidential Awarded Best Announcer from the Southern Province and also from the origin it could grab many All Island & Provincial victories.</p>
+
+            </div>
+  
+
+
+   <!-- We Are the.....-->
+            
+            <div class="we-are-the">
+              <p class="we-are-the-txt">We Are The Eagle Announcers!
+              </p>
+            </div>
+
+
+
+
+   <!-- Blocks--> 
+          <div class="blocks">
+
+            <div class="block1">
+              <img class="thissa-graphic" src="Graphics/thissagraphic.jpeg" alt="">
+              <p class="block1-maintxt">Final Rounds Of <br>Thissa Jayawardhane Memorial Inter School Media Competition 2020</p>
+              <p class="block1-text">Please Register the Selected Finalists for the Final Rounds. You can View names of the Finalists HERE.</p>
+              <a href="#" target="_blank" class="block1-btn">Available Soon!</a>
+            </div>
+
+            <div class="block2">
+              <img class="trophy-graphic" src="Graphics/trophy.png" alt="">
+              <p class="block2-maintxt">Our Archivements <br>As a Leading School In Sri Lanka </p>
+              <p class="block2-text">Go through our all Archivements of College and all our extra-curricular Activities.  </p>
+              <a href="http://www.rcmu.lk/Media-Achievements/" target="_blank" class="block2-btn">Click Here</a>
+            </div>
+
+            
+
+            <div class="block3">
+              <img class="gallery-graphic" src="Graphics/GALLERY.jpeg" alt="">
+              <p class="block3-maintxt">Beautiful Destinations <br>in our 20 Years Long journey </p>
+              <p class="block3-text">Unforgotable moments of our Media Journey. </p>
+              <a href="https://www.facebook.com/rumuonline/photos/?ref=page_internal&tab=album" target="_blank" class="block3-btn">Click Here</a>
+            </div>
+          </div>
+
+
+          <div class="block2-mobile">
+            <img class="trophy-graphic-mobile" src="Graphics/trophy.png" alt="">
+            <p class="block2-maintxt-mobile">Our Archivements <br>As a Leading School In Sri Lanka </p>
+            <p class="block2-text-mobile">Go through our all Archivements of College and all our extra-curricular Activities.  </p>
+            <a href="#" target="_blank" class="block2-btn-mobile">Click Here</a>
+          </div>
+
+          <div class="block3-tab">
+            <img class="gallery-graphic" src="Graphics/GALLERY.jpeg" alt="">
+            <p class="block3-maintxt">Beautiful Destinations <br>in our 20 Years Long journey </p>
+            <p class="block3-text">Go through all the achievements of Richmond College and all our Extra-curricular Activities.  </p>
+            <a href="#" target="_blank" class="block3-btn">Click Here</a>
+          </div>
+
+
+
+
+    <!-- Container -->
+
+        <div class="News-box">
+
+          <!-- Heading -->
+          <h1 class="heading">Latest UPADTE</h1>
+
+          <!-- Articles -->
+          <div class="article-box">
+            <div class="p-8">
+              <div class="article-category">Administration Change</div>
+              <h5 class="article-topic"> Newly Appointed Principal Of Richmond College </h5>
+              <p class="article-para">On behalf of the entire Richmond Community, We Wholeheartedly Welcome Mr. Saman Pushpakumara, The new Principal of our Alma mater.
+                We hope that with your Energy, Enthusiasm and Focus on Education, Our young Richmondites may reach the next levels of Glory!</p>            </div>
+          </div>
+
+          <div class="article-box">
+            <div class="p-8">
+              <div class="article-category">Ended Successfully</div>
+              <h5 class="article-topic"> Annual Election Of the Richmond College Media Unit 2022 </h5>
+              <p class="article-para">The Annual Election of the Richmond College Media Unit was held on 14th Of January 2022 Successfully.</p>
+              <a href="https://drive.google.com/drive/folders/1S_D39IcEsj_XQBLhLhqxs69FamcfymZx?usp=sharing" class="article-btn" target="_blank">See Election Gallery</a>
+            </div>
+          </div>
+
+          <div class="article-box article-two">
+            <div class="p-8">
+              <div class="article-category">Ended Successfully</div>
+              <h5 class="article-topic"> Richmond Premier Leauge (RCL) 2nd Edition </h5>
+              <p class="article-para">The 2nd Edition of the Richmond Premier League 2021 was ended successfully on 29th of December 2021 at Galle International Cricket Stadium. At the end, the Championship has claimed by the Team Triggs.<br>You can view the moments of RCL from below.</p>
+              <a href="https://www.facebook.com/media/set/?set=a.4799437210123800&type=3" class="article-btn" target="_blank">View RCL Gallery</a>
+            </div>
+            
+          </div>
+
+        </div>
+
+
+    <!-- FORM -->
+        <div id="contact-us" class="container">
+          <span class="big-circle"></span>
+          <div class="form">
+            <div class="contact-info">
+              <h3 class="title">Have to Say Something?</h3>
+              <p class="text">
+                Please Leave your Ideas And Suggestions here.<br> Also You can Contact with us via below Options. Let's Talk!
+              </p>
+
+              <div class="info">
+                <div class="information">
+                </div>
+                <div class="information">
+                  <img src="Graphics/email.png" class="icon" alt="" />
+                  <p>rcmu2021@gmail.com</p>
+                </div>
+                <div class="information">
+                  <img src="Graphics/phone.png" class="icon" alt="" />
+                  <p>+94 766181975 - Yasiru<br>+94 71 398 7027 - Thisath</p>
+                </div>
+                <div class="information">
+                  <img src="Graphics/location.png" class="icon" alt="" />
+                  <p>Richmond College Media Unit, Richmond College, Galle.</p>
+                </div>
+              </div>
+
+              <div class="social-media">
+                <p>Connect with us :</p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/rumuonline" class="social-icons-bg">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.instagram.com/rcmu_official/" class="social-icons-bg">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://wa.me/+94766181975" class="social-icons-bg">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form" id="contact-form">
+              <span class="circle one"></span>
+              <span class="circle two"></span>
+
+              <form action="index.html" autocomplete="off" id="regform">
+                <h3 class="title">Reach Us Here!</h3>
+              
+                <div class="input-container">
+                  <div class="inputlabelname">Name</div>
+                  <input type="text" id="fullname" class="input" />
+                  <label for="">Name</label>
+                  <span>Name</span>
+                </div>
+
+                <div class="input-container">
+                  <div class="inputlabelname">Email</div>
+                  <input type="email" id="email" class="input" />
+                  <label for="">Email</label>
+                  <span>Email</span>
+                </div>
+
+                <div class="input-container">
+                  <div class="inputlabelname">Subject</div>
+                  <input type="text" id="subject" class="input" />
+                  <label for="">Subject</label>
+                  <span>Subject</span>
+                </div>
+
+                <div class="input-container">
+                    <div class="inputlabelname">Comments</div>
+                    <textarea type="text" id="comments" class="input"> </textarea>
+                    <label for="">Comments</label>
+                    <span>Comments</span>
+                  </div>
+
+
+                <input type="submit" value="Submit" class="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+    <!-- FOOTER -->
+
+      <div class="footer">
+          <img src="Graphics/RCMU Logo copy.png" alt="RCMU logo">
+          <p class="footer-name">Richmond College Media Unit</p>
+          <div class="footer-arrange">
+            <ul class="footer-forward-list">
+              <li class="footer-site-links"><a href="about page/index.html">About</a></li>
+              <li class="footer-site-links"><a href="Media-Achievements/index.html">Achievements</a></li>
+              <li class="footer-site-links"><a href="Posts/index.html">Posts</a></li>
+              <li class="footer-site-links"><a href="Contact/index.html">Contact</a></li>
+            </ul>
+            <p class="footer-copyright">©RCMU2022 | On Behalf Of Richmond College Galle</p>
+        </div>
+      </div>
+  </div>
+
+
+
+
+    <!-- Messenger Chat plugin Code -->
+      <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+      <div id="fb-customer-chat" class="fb-customerchat">
+      </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "288208381237009");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+        
+
+ 
+
+
+   <!-- Script Sources-->     
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+        <script src="data.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="server.js"></script>
+        <script src="index.js"></script>
+
+</body>
+</html>
