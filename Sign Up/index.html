@@ -71,23 +71,23 @@
 
 
 <body>
-          <div class="card">
+          <div class="card" id="login">
             <div class="card-header">
-                <center><h3>Login Or Sign Up</h3></center>
+                <center><h3>Login</h3></center>
             </div>
             <form onsubmit="login()" id="loginForm" class="card-body px-5 py-4">
                 <center><small><span id="error" style="color: red"></span></small></center>
                 <center><label class="custom-field">
-                    <input id="email" type="text" class="input" required />
+                    <input id="login-email" type="text" class="input" required />
                     <span class="placeholder">Email Id</span>
                 </label><br />
                 <label class="custom-field">
-                    <input id="password" type="password" class="input" required />
+                    <input id="login-password" type="password" class="input" required />
                     <span class="placeholder">Password</span>
                 </label></center>
                 <a href="#" onclick="forgotPass()" class="forgot">Forgot Password?</a>
-                <center><button type="submit" class="login-btn">Login</button>
-                <button onclick="signUp()" class="sign-btn">Sign Up</button>
+                <center><button type="submit" class="login-btn" id="login-btn">Login</button>
+
                 </center>
                 <div class="methods">Or Sign in With</div>
                 <a href="">
@@ -97,8 +97,41 @@
                 <a href="">
                 <img src="/Sign Up/graphics/fb-signin.png" class="fb-signin">
                 </a>
+
+                <p class="bottom-txt">Don't Have An Account?</p><button class="register-btn">Register Here</button>
             </form>
         </div>
+
+        <div class="card-reg" id="reg">
+          <div class="card-header">
+              <center><h3>Register</h3></center>
+          </div>
+          <form onsubmit="register()" id="loginForm" class="card-body px-5 py-4">
+              <center><small><span id="error" style="color: red"></span></small></center>
+              <center><label class="custom-field">
+                  <input id="reg-email" type="text" class="input" required />
+                  <span class="placeholder">Email Id</span>
+              </label><br />
+              <label class="custom-field">
+                  <input id="reg-password" type="password" class="input" required />
+                  <span class="placeholder">Password</span>
+              </label></center>
+              <center><button type="submit" class="login-btn">Register</button>
+
+              </center>
+              <div class="methods">Or Sign Up With</div>
+              <a href="">
+              <img src="/Sign Up/graphics/google-signin.png" class="g-signin"><br>
+              </a>
+
+              <a href="">
+              <img src="/Sign Up/graphics/fb-signin.png" class="fb-signin">
+              </a>
+
+              <p class="bottom-txt">Already A Member?</p><button class="register-btn">Login Here</button>
+          </form>
+      </div>
+
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
 
@@ -118,6 +151,7 @@
 <script src="firebase.js"></script>
 <script src="index.js"></script>
 <script src="welcome.js"></script>
+
 
  <!-- FOOTER -->
 
