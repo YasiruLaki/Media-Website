@@ -1,0 +1,228 @@
+
+/* Background */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  overflow-x: hidden;
+}
+
+.landing-section {
+   background-image: url("graphics/Background new.jpg");
+   height: 1000px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed; 
+}
+
+/* Nav Bar */
+.toplogo{
+   position: absolute;
+   width: 125px;
+   margin-left: 26px;
+   margin-top: 11px;
+}
+
+.rcmuname{
+    padding-top: 31px;
+    font-weight: 100;
+    font-size: 30px;
+    color: white;
+    margin-bottom: -77px;
+    padding-left: 136px;
+    font-family: poppins;
+}
+
+.pagename{
+    padding-top: 31px;
+    font-weight: 50;
+    font-size: 30px;
+    color: white;
+    margin-bottom: -77px;
+    text-align: right;
+    padding-right: 77px;
+    font-family: poppins;
+}
+
+
+.floating-box-left{
+    background-color: rgba(255, 255, 255, 0.253);
+    width: 40%;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-top: 300px;
+    float: left;
+    margin-left: 100px;
+    align-content: center;
+    align-items: center;
+}
+
+.box-topic{
+    color: white;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+}
+
+.floating-box-left p{
+    color: white;
+    font-family: poppins;
+    font-size: 20px;
+    text-align: center;
+}
+
+.floating-box-right{
+    background-color: rgba(255, 255, 255, 0.253);
+    width: 40%;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    float: right;
+    margin-top: 300px;
+    margin-right: 100px;
+}
+
+.block1-btn{
+    font-size: 25px;
+    font-family: poppins;
+    margin-top: 49px;
+    text-decoration: none;
+    color: #fafafa;
+    background-color: #8c00ff;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 300ms;
+    padding-right: 7px;
+    padding-left: 7px;
+    margin: 0,auto;
+    display: flex;
+    justify-content: center;
+  }
+
+.floating-box-right p{
+    color: white;
+    font-family: poppins;
+    font-size: 20px;
+    text-align: center;
+}
+
+.block1-btn:hover{
+  background-color: #9e30f8;
+  transition: 300ms;
+}
+
+.guidlines{
+  font-size: 40px;
+  color: white;
+  font-family: poppins;
+  text-align: center;
+  margin-top: 700px;
+}
+
+.guidlines a{
+  color: white;
+}
+
+/*FOOTER*/
+.footer{
+  background-color: rgb(19, 23, 43);
+  height: auto;
+  padding: 30px 40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-name{
+  color: white;
+  font-family: poppins;
+  text-align: left;
+  font-size: 1.5vw;
+  position: relative;
+  margin-top: 0%;
+  margin: 0ch;
+  border-right:1px solid white;
+  padding:18px 0;
+  padding-right:3vw;
+  
+}
+
+.footer-copyright{
+  margin:0;
+  margin-top: 2%;
+  color: rgb(196, 194, 194);
+  font-family: poppins;
+  text-align: left;
+  font-size: 1.1vw;
+
+}
+
+.footer-site-links{
+  display:inline-block;
+}
+.footer-site-links a{
+  color:white;
+  text-decoration: none;
+  padding-right:0.5vw;
+  font-family: poppins;
+  font-weight: lighter;
+  font-size: 1.2vw;
+}
+.footer-arrange{
+  height:fit-content;
+  width:fit-content;
+  margin-left:3vw;
+}
+.footer-forward-list{
+  margin:0;
+  padding:0;
+}
+.footer img{
+  width:10vw;
+}
+@media(max-width:850px){
+  .footer-site-links a{
+    font-size:1.3vw;
+  }
+  .footer-copyright{
+    font-size:1.2vw;
+  }
+}
+@media(max-width:750px){
+  .footer-site-links a{
+    font-size:1.5vw;
+  }
+  .footer-copyright{
+    font-size:1.3vw;
+  }
+  .footer-name{
+    font-size:2vw;
+  }
+}
+@media(max-width:550px){
+  .footer{
+    flex-direction: column;
+    justify-content: center;
+    padding:10px;
+  }
+  .footer-name{
+    border:none;
+    text-align:center;
+    padding:0;
+    padding-top:2%;
+  }
+  .footer img{
+    width:15vw;
+  }
+  .footer-arrange{
+    margin:0;
+    text-align:center;
+  }
+  .footer-site-links{
+    font-size:2vw;
+  }
+}

@@ -9,7 +9,7 @@ body {
 
 .landing-section {
    background-image: url("graphics/Background new.jpg");
-   height: 180vh;
+   height: auto;
    width: 100%;
    background-size: cover;
    background-position: center;
