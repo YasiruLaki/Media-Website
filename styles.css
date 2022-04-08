@@ -1659,7 +1659,29 @@ textarea.input {
 .optiontxt{
   color: black;
 }
+
   
+#mc_embed_signup{
+  background:rgba(91, 110, 255, 0); 
+  clear:center; 
+  font:14px Helvetica,Arial,sans-serif;  
+  width:auto;
+  height: auto;
+  font-family: poppins; 
+  color: white; 
+  backdrop-filter: blur(10px); 
+  border-radius: 50px; 
+  align-content: center; 
+  margin: 0,auto;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 0 0 20px 1px rgb(0 0 0 / 40%);
+  margin-bottom: 20px;
+  
+}
+
 
 
 /* FOOTER */
