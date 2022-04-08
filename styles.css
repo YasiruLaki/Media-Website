@@ -1681,6 +1681,23 @@ textarea.input {
   margin-bottom: 20px;
   
 }
+#mce-EMAIL{
+  background-color: #ffffff5d;
+  margin-bottom: 0%;
+}
+
+#mce-MMERGE7{
+  background-color: #ffffff5d;
+}
+
+#field-input{
+  padding-bottom: 0%;
+}
+
+.button{
+  background-color: #8c00ff;
+  color: white;
+}
 
 
 
