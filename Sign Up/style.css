@@ -80,7 +80,6 @@ body {
 
 .nav {
   height: 0px;
-  width: 100%;
   position: relative;
 }
 
@@ -108,7 +107,7 @@ body {
   }
 }
 
-.nav > .nav-links {
+.nav > .nav-links-1 {
   display: inline;
   float: right;
   word-spacing: 13px;
@@ -240,258 +239,45 @@ body {
    }
 
 
-.card{
-    height: 530px;
-    width: 400px;
-    background-color: rgba(255,255,255,0.13);
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 60%;
-    left: 50%;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 0px 35px;
-    color: white;
-}
-.card-reg{
-  height: 530px;
-  width: 400px;
-  background-color: rgba(255,255,255,0.13);
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 60%;
-  left: 50%;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255,255,255,0.1);
-  box-shadow: 0 0 40px rgba(8,7,16,0.6);
-  padding: 0px 35px;
-  color: white;
-  display: none;
-}
-
-@media(max-width:430px){
-  .card{
-    height: 500px;
-    width: 300px;
-  }
-  .card-reg{
-    height: 500px;
-    width: 300px;
-  }
-}
-form *{
-    font-family: 'Poppins',sans-serif;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-    outline: none;
-    border: none;
-}
-
-.card-header{
-  font-size: 30px;
-  font-weight: 400;
-  margin-bottom: 0px;
-  padding-bottom: 0%;
-  margin-top: 0%;
-}
-
-*, *::before, *::after{
-  box-sizing: border-box;
-}
-
-.custom-field{
-  position: relative;
-  font-size: 14px;
-  padding-top: 20px;
-  margin-top: 5px;
-}
-
-.custom-field input{
-  padding: 8px;
-  width: 300px;
-  font-size: 14px;
-  border-radius: 3px;
-  border: 1.5px solid rgb(255, 255, 255);
-  outline-color: deepskyblue;
-  background-color: transparent;
-  backdrop-filter: blur(10px) ;
-  margin-bottom: 10px;
+.form{
+  margin-top: 00px;
   color: white;
 }
 
-.custom-field .placeholder{
-  position: absolute;
-  left: 12px;
-  top: calc(50% + 10px);
-  transform: translateY(-50%);
-  color: rgb(255, 255, 255);
-  transition: top 0.1s ease, font-size 0.1s ease, color 0.1s ease, opacity 0.15s ease;
-}
-
-.custom-field input:valid + .placeholder,
-.custom-field input:focus + .placeholder{
-  opacity: 0%;
-}
-
-.message{
-  font-size: 70px;
-  font-family: 'Ubuntu', sans-serif;
-  color: steelblue;
-}
-
-.success{
-  font-size: 18px;
-  margin-top: 15px;
-  color: seagreen;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.forgot{
-  text-decoration: none;
-  color: white;
-  margin: 0,auto;
-  opacity: 90%;
-  font-size: 15px;
+.header{
+  margin-bottom: 5px;
   text-align: center;
-  padding-left: 13px;
+  font-size: 30px;
+  font-weight: 600;
+
 }
 
-.login-btn{
+.signup-btn{
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #8c00ff;
   color: white;
-  border-style: none;
-  padding: 6px;
-  font-size: 18px;
-  border-radius: 8px;
-  width: 200px;
-  cursor: pointer;
-  margin-right: 8px;
-  margin-top: 20px ;
+  margin-bottom: 1px;
 }
 
-.login-btn:hover{
-  background-color: #7004c9;
-  transition: 300ms ease;
+.btn-primary{
+  width: 170px;
+  padding: 2px;
+  margin-top: 0px;
 }
 
-.sign-btn{
-  background-color: #3700ce;
-  color: white;
-  border-style: none;
-  padding: 6px;
-  font-size: 18px;
-  border-radius: 8px;
-  width: 100px;
-  cursor: pointer;
-}
-.sign-btn:hover{
-  background-color: #3104ac;
-  transition: 300ms ease;
-}
-
-.methods{
+.sign-in-with{
+  margin-bottom: 2px;
   margin-top: 20px;
-  padding-left: 100px;
 }
 
-.g-signin{
-  width: 250px;
-  margin-top: 10px;
-  transform: scale(100%);
-  padding-left: 70px;
+.btn{
+  padding: none;
 }
-.g-signin:hover{
-  opacity: 90%;
-  cursor: pointer;
-  transform: scale(95%);
-  transition: 300ms;
-}
-.fb-signin{
-  width: 250px;
-  margin-top: 5px;
-  transform: scale(100%);
-  padding-left: 70px;
-}
-
-.fb-signin:hover{
-  opacity: 90%;
-  cursor: pointer;
-  transform: scale(95%);
-  transition: 300ms;
-}
-
-@media(max-width:430px){
-  .card{
-    height: 500px;
-    width: 300px;
-  }
-  .card-header{
-    font-size: 20px;
-    font-weight: 400;
-  }
-  .custom-field input{
-    padding: 2px;
-    width: 200px;
-    font-size: 14px;
-    border-radius: 3px;
-    border: 1.5px solid rgb(255, 255, 255);
-    outline-color: deepskyblue;
-    background-color: transparent;
-    backdrop-filter: blur(10px) ;
-    margin-bottom: 10px;
-    color: white;
-  }
-  .g-signin{
-    width: 210px;
-    margin-top: 10px;
-    transform: scale(100%);
-    padding-left: 10px;
-
-  }
-  .fb-signin{
-    width: 210px;
-    margin-top: 5px;
-    transform: scale(100%);
-    padding-left: 10px;
-  }
-  .methods{
-    margin-top: 20px;
-    padding-left: 50px;
-  }
-
-}
-
-.bottom-txt{
-  font-size: 14px;
-  width: 55%;
-  float: left;
-  margin: 0%;
-  margin-top: 10px;
-}
-
-.register-btn{
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  cursor: pointer;
-  background-color: #e0e0e000;
-  width: 40%;
-  margin: 0%;
-  font-size: 14px;
-  margin-top: 8px;
-  text-align: left;
-  margin-left: 0%;
-
-}
-
-.register-btn:hover{
-  color: rgb(216, 216, 216);
-  transition: 500ms;
-}
-
-
 
 /* FOOTER */
 
