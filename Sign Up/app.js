@@ -1,96 +1,68 @@
-const form = $("#form-el")[0];
-const swapSignInUpBtn = $("#swap-sign-in-up")[0];
-const heading = $("#heading")[0];
-const formSubmitBtn = $("#form-submit-btn")[0];
-const switchNote = $("#switch-note")[0];
-const authText = $("#auth-text")[0];
-const formContainer = $('#form-container')[0];
-const signOutBtn = $('#sign-out-btn')[0];
-const errorModal = $('#error-modal');
-const verifyEmailBtn = $('#email-verify-btn')[0];
-const forgotPassBtn = $('#forgot-pass-btn')[0];
-const googleAuthBtn = $('#google-auth')[0];
+// Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyB_-s9xtEs-kfcGK2AjZsbu_V4FCEJ6EaY",
+    authDomain: "signuppage-1cd22.firebaseapp.com",
+    databaseURL: "https://signuppage-1cd22-default-rtdb.firebaseio.com",
+    projectId: "signuppage-1cd22",
+    storageBucket: "signuppage-1cd22.appspot.com",
+    messagingSenderId: "145475644240",
+    appId: "1:145475644240:web:e02980cbf370b33e4b1a55",
+    measurementId: "G-XKZ6T031YG"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
-let submitAction = "sign-up", forceToSignIn = false
+  const auth =  firebase.auth();
 
-const switchSignInSignUp = (swapTo) => {
-	if (swapTo === "sign-in") {
-		heading.innerText = "Sign In";
-		formSubmitBtn.innerText = "Sign In";
-		swapSignInUpBtn.innerText = "Sign Up";
-		switchNote.innerText = "Don't have an account ?";
-		submitAction = "sign-in"
-		forgotPassBtn.classList.remove('d-none')
-		form['passwordInput'].classList.remove('d-none')
-		forceToSignIn = false
-		return "sign-up";
-	} else {
-		heading.innerText = "Sign Up";
-		formSubmitBtn.innerText = "Sign Up";
-		swapSignInUpBtn.innerText = "Sign In";
-		switchNote.innerText = "Already have an account ?";
-		submitAction = "sign-up"
-		forgotPassBtn.classList.add('d-none')
-		form['passwordInput'].classList.remove('d-none')
-		forceToSignIn = false
-		return "sign-in";
-	}
-}
+  //signup function
+  function signUp(){
+    var username = document.getElementById("username-reg");
+    var email = document.getElementById("email-reg");
+    var password = document.getElementById("pass-reg");
 
-const validateForm = (email, pass = {length: 8}) => {
-	const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
-	return pattern.test(email) && pass.length >= 8
-}
+    const promise = auth.createUserWithEmailAndPassword(email.value,password.value);
+    //
+    promise.catch(e=>alert(e.message));
+    alert("SignUp Successfully");
 
-const updateUiForResetPass = () => {
-	heading.innerText = "Reset Password";
-	formSubmitBtn.innerText = "Reset";
-	swapSignInUpBtn.innerText = "Sign In";
-	switchNote.innerText = "Back to";
-	submitAction = "reset-pass"
-	forgotPassBtn.classList.add('d-none')
-	form['passwordInput'].classList.add('d-none')
-	forceToSignIn = true
-}
+    promise.catch((error) => {
+       document.getElementById("error-code").innerHTML = error.message
+      // ..
+    });
+  }
 
-swapSignInUpBtn.addEventListener("click", () => {
-	let currentData = swapSignInUpBtn.attributes['aria-data'].value;
-	currentData = switchSignInSignUp(forceToSignIn ? "sign-in" : currentData);
-	swapSignInUpBtn.attributes['aria-data'].value = currentData;
-})
+  //signIN function
+  function  signIn(){
+    var email = document.getElementById("email-login");
+    var password  = document.getElementById("pass-login");
+    const promise = auth.signInWithEmailAndPassword(email.value,password.value);
+    promise.catch(e=>alert(e.message));
 
-form.addEventListener("submit", e => e.preventDefault())
+    promise.catch((error) => {
+      document.getElementById("error-code").innerHTML = error.message
+     // ..
+   });
+    
+  }
 
-formSubmitBtn.addEventListener("click", (e) => {
-	const email = form['emailInput'].value
-	const pass = form['passwordInput'].value
-	if (submitAction === "sign-up") {
-		if (validateForm(email, pass)) {
-			signUpUser(email, pass)
-		}
-	} else if (submitAction === "sign-in") {
-		if (validateForm(email, pass)) {
-			signInUser(email, pass)
-		}
-	} else if (submitAction === "reset-pass") {
-		if (validateForm(email)) {
-			resetPassword(email)
-		}
-	}
-})
+  //ckeck
 
-signOutBtn.addEventListener("click", () => {
-	signOutUser();
-})
 
-verifyEmailBtn.addEventListener("click", () => {
-	verifyEmail()
-})
+  //signOut
 
-forgotPassBtn.addEventListener("click", () => {
-	updateUiForResetPass();
-})
+  function signOut(){
+    auth.signOut();
+    alert("SignOut Successfully from System");
+  }
 
-googleAuthBtn.addEventListener("click", () => {
-	signInUserWithGoogle();
-})
+  //active user to homepage
+  firebase.auth().onAuthStateChanged((user)=>{
+    if(user){
+      var email = user.email;
+      alert("Active user "+email);
+
+    }else{
+      alert("No Active user Found")
+    }
+  })
